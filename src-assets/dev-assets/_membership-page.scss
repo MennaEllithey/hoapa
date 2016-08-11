@@ -72,6 +72,9 @@ a {
     color: #fff;
     border-radius: 4px 4px 0 0;
     margin-bottom: 0px;
+    @media (max-width: 767px) {
+        padding: 20px 0;
+    }
 }
 
 .featureTable-small {
@@ -104,7 +107,7 @@ a {
     display: table-cell;
     padding-bottom: 50px;
     @media (max-width: 767px) {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 18px;
     }
 }
@@ -180,7 +183,7 @@ footer {
         }
     }
     @media (max-width: 600px) {
-        margin-top: 60px;
+        margin-top: 0px;
         background: url(../images/footer/footer-back-m.png) no-repeat center 60px;
         background-size: 100%;
         background-position-x: center;
@@ -190,7 +193,8 @@ footer {
 .custom-padding{    
     margin-top: 40px;
     @media (max-width: 767px) {
-            padding: 5px 10px;
+        padding: 5px 10px;
+        margin: 0;
     }
 }
 .twoColumns{
@@ -239,7 +243,6 @@ footer {
         width: 84%;
     }
 }
-
 #navMenu {
     a {
         @media (min-width: 768px) {

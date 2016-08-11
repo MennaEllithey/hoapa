@@ -37795,6 +37795,12 @@ a {
   margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+  .featureTable-heading {
+    padding: 20px 0;
+  }
+}
+
 .featureTable-small {
   color: inherit;
   display: block;
@@ -37828,7 +37834,7 @@ a {
 
 @media (max-width: 767px) {
   .itemStyle {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 18px;
   }
 }
@@ -37908,7 +37914,7 @@ footer:before {
 
 @media (max-width: 600px) {
   footer {
-    margin-top: 60px;
+    margin-top: 0px;
     background: url(../images/footer/footer-back-m.png) no-repeat center 60px;
     background-size: 100%;
     background-position-x: center;
@@ -37923,6 +37929,7 @@ footer:before {
 @media (max-width: 767px) {
   .custom-padding {
     padding: 5px 10px;
+    margin: 0;
   }
 }
 
