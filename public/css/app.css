@@ -37916,6 +37916,10 @@ footer:before {
   }
 }
 
+.custom-padding {
+  margin-top: 40px;
+}
+
 @media (max-width: 767px) {
   .custom-padding {
     padding: 5px 10px;
