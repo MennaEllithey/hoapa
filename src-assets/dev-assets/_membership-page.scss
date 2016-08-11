@@ -14,8 +14,12 @@
 #navMenu {
     i:not(.icon) {
         font-size: 15px;
+        @media (max-width: 767px) {
+            font-size: 18px;
+            float: right;
+            margin-bottom: 10px;
+        }
     }
-
     a:not(.btn) {
         font-weight: 500;
         color: #555555;
@@ -99,6 +103,10 @@ a {
     width: 50%;
     display: table-cell;
     padding-bottom: 50px;
+    @media (max-width: 767px) {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
 
 .rowStyle:first-child {
@@ -124,48 +132,6 @@ a {
         border-radius: 0 0 4px 4px;
     }
 }
-
-.centeredBlock {
-    width: 58.3333333333%;
-    margin: 0 auto;
-    padding: 0 15px;
-    margin-bottom: 30px;
-    @media (max-width: 991px) {
-        width: 77%;
-    }
-}
-
-.basicLabel {
-    color: #999999;
-    display: inline-block;
-    margin-right: 30px;
-    font-weight: 600;
-}
-
-.customDropdown {
-    background: #ededed;
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(53%, #f6f6f6), color-stop(100%, white));
-    background: -webkit-linear-gradient(top, #ededed 0%, #f6f6f6 53%, white 100%);
-    background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 53%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
-    padding: 10px 50px;
-    width: auto;
-    border-radius: 4px 0 0 4px;
-}
-
-.customDropdownToggle {
-    padding: 5px 10px;
-    border: 1px solid #cccccc;
-    border-radius: 0 4px 4px 0;
-
-    &:before {
-        content: "\f0d8";
-        font-family: fontAwesome;
-        display: block;
-        height: 10px;
-    }
-}
-
 .input-group-button {
     width: 1%;
     vertical-align: middle;
@@ -221,9 +187,43 @@ footer {
         background-repeat: repeat-x;
     }
 }
+.custom-padding{
+    @media (max-width: 767px) {
+            padding: 5px 10px;
+    }
+}
+.twoColumns{
+    td{
+        @media (max-width: 767px) {
+            width: 50%;
+            padding: 10px 0!important;
+        }
+    }
+}
+.hoapa-nav-tabs-navigation{
+    .hoapa-nav-next{
+        @media (max-width: 767px) {
+            right: 10px;
+        }
+    }
+    .hoapa-nav-prev{
+        @media (max-width: 767px) {
+            left: 10px;
+        }
+    }
+}
+#bs-example-navbar-collapse-1 {
+    @media (max-width: 767px) {
+        position: absolute;
+        background: #f6ffe3;
+        width: 100%;
+        border-bottom: 1px solid #99c63b;
+    }
+}
 .AdSection {
     @media (max-width: 991px) {
         margin-top: 30px;
+        padding: 0;
     }
 }
 #social-icons {

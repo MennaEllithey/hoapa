@@ -37733,6 +37733,14 @@ button {
   font-size: 15px;
 }
 
+@media (max-width: 767px) {
+  #navMenu i:not(.icon) {
+    font-size: 18px;
+    float: right;
+    margin-bottom: 10px;
+  }
+}
+
 #navMenu a:not(.btn) {
   font-weight: 500;
   color: #555555;
@@ -37818,6 +37826,13 @@ a {
   padding-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  .itemStyle {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
 .rowStyle:first-child > * {
   padding-top: 50px;
 }
@@ -37836,50 +37851,6 @@ a {
 .rowStyle:last-child .markSTyle {
   border-bottom: 1px solid #d0cece;
   border-radius: 0 0 4px 4px;
-}
-
-.centeredBlock {
-  width: 58.3333333333%;
-  margin: 0 auto;
-  padding: 0 15px;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 991px) {
-  .centeredBlock {
-    width: 77%;
-  }
-}
-
-.basicLabel {
-  color: #999999;
-  display: inline-block;
-  margin-right: 30px;
-  font-weight: 600;
-}
-
-.customDropdown {
-  background: #ededed;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(53%, #f6f6f6), color-stop(100%, white));
-  background: -webkit-linear-gradient(top, #ededed 0%, #f6f6f6 53%, white 100%);
-  background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 53%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
-  padding: 10px 50px;
-  width: auto;
-  border-radius: 4px 0 0 4px;
-}
-
-.customDropdownToggle {
-  padding: 5px 10px;
-  border: 1px solid #cccccc;
-  border-radius: 0 4px 4px 0;
-}
-
-.customDropdownToggle:before {
-  content: "\f0d8";
-  font-family: fontAwesome;
-  display: block;
-  height: 10px;
 }
 
 .input-group-button {
@@ -37945,9 +37916,44 @@ footer:before {
   }
 }
 
+@media (max-width: 767px) {
+  .custom-padding {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .twoColumns td {
+    width: 50%;
+    padding: 10px 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hoapa-nav-tabs-navigation .hoapa-nav-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hoapa-nav-tabs-navigation .hoapa-nav-prev {
+    left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #bs-example-navbar-collapse-1 {
+    position: absolute;
+    background: #f6ffe3;
+    width: 100%;
+    border-bottom: 1px solid #99c63b;
+  }
+}
+
 @media (max-width: 991px) {
   .AdSection {
     margin-top: 30px;
+    padding: 0;
   }
 }
 
