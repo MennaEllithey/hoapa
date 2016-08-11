@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+*{font-family: 'Open Sans', sans-serif;}
+@import url(https://fontastic.s3.amazonaws.com/bwVTqjC6nhQfajgPUFXUfm/icons.css);
+//@import 'type'; //
+@import "slick-theme";
+@import "slick";
+@import "bootstrap-select";
+
+@import "hoapa_header";
+@import "bootstrap";
+@import "addition-css";
+@import "copy-button-fix";
+@import "dashboard-styles";
+@import "helping-classes";
+@import "our-ad";
+@import "mobile-filter";
+@import "new-footer";
+@import "fb-like-slider";
+@import "reviews-section";
+@import "token-field";
+@import "hoapa-profile";
+@import "hoapa-buttons";
+@import "hoapa-postad";
+@import "hoapa-profile-edit";
+@import "hoapa-project";
+@import "hoapa-advertising";
+@import "hoapa-popups";
+@import "hoapa-tables";
+@import "hoapa-responsive-table";
+@import "hoapa-earlyaccess-pages";
+@import "hoapa-chat-page";
+@import "chat-bubble";
+@import "hoapa-mywork";
+@import "overwrite";
+@import "_membership-page.scss";
+
+
+.va-middle{
+	display: inline-block;
+	vertical-align: middle;
+}

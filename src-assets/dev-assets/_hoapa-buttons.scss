@@ -1,0 +1,95 @@
+.btn
+{
+    // font-weight: bold; this cause a ripple effect 
+
+    &-ad
+    {
+        font-size: 20px;
+        font-weight: bold;
+
+        margin-left: 10px;
+        padding: 9px 20px 9px 20px;
+
+        color: #fff !important;
+        border: 0;
+        min-width: 139px;
+        background: #ff7519;
+        &:hover,
+        &:active,
+        &.active
+        {
+            background-color: #ff7519 !important;
+        }
+        @media screen and (max-width: 767px)
+        {
+            margin: 15px auto !important;
+        }
+    }
+    &-bg-none
+    {
+        font-size: 17.7px;
+        line-height: 37px;
+
+        min-width: 135px;
+
+        color: #91c11e;
+        &:hover
+        {
+            color: #91c11e;
+        }
+    }
+    &-green
+    {
+        font-size: 17.7px;
+        line-height: 37px;
+
+        width: 144px;
+        min-width: 135px;
+        margin-top: 10px;
+        padding: 0;
+
+        color: #fff;
+        background-color: #91c11e;
+        &:hover
+        {
+            color: #fff;
+        }
+    }
+    &-orange
+    {
+        font-size: 21px;
+
+        width: 216px;
+        min-width: 135px;
+        padding: 9px 22px 13px 21px;
+
+        color: #fff;
+        color: #fff;
+        background-color: #ff7519;
+        &:hover
+        {
+            color: #fff;
+        }
+    }
+    &-qoutes
+    {
+        min-width: 192px;
+        padding: 9px 20px 9px 20px;
+        @media screen and (max-width: 767px){
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+    &-dark
+    {
+        color: #fff;
+        background-color: #3e3e3e;
+        &:hover{
+            background-color: #3e3e3e !important;
+        }
+        @media screen and (max-width: 767px){
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}

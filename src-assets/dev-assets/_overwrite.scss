@@ -1,0 +1,485 @@
+.subject-btn .dropdown-menu>li>a:focus{
+  text-decoration: none;
+  color: #333;
+  background: transparent;
+}
+.subject-btn .dropdown-menu>li>a:hover{
+  text-decoration: none;
+  color: #fff;
+  background: #8ec220;
+}
+input:focus::-webkit-input-placeholder {color: #A09E9E}
+input:focus::-moz-placeholder          {color: #A09E9E}
+input:focus:-moz-placeholder           {color: #A09E9E}
+input:focus:-ms-input-placeholder      {color: #A09E9E}
+
+.sidebar-content{
+  width: 73%;
+}
+.sidebar-content h5 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #44619d;
+}
+.sidebar-content p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #383838;
+}
+.sidebar-thumbnail-image>img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.hoapa-popup-categories>a>img{
+  max-width: 100%;
+  max-height: 100px;
+}
+.sidebar-thumbnail-image {
+  height: auto;
+}
+.ad-img-height {
+  margin: 0 0 8px;
+  /* padding: 8px 1px; */
+  display: inline-block;
+  width: 100%;
+  width: calc(100% + 1px);
+  min-height: 95px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0;
+
+  &:hover {
+    background: #e9eaec;
+    .sidebar-content{
+      h5{
+        color: #222;
+      }
+      p{
+        color: #666;
+      }
+    }
+  }
+  &.display-everywhere{
+    &:hover{
+      background: transparent;
+    }
+  }
+}
+
+.ad-img-height:last-of-type {
+  border-bottom: 0;
+}
+
+#work-hire-ajax-loader{
+  position: absolute;
+  bottom: 40px;
+  right: -35px;
+  @media screen and (max-width: 767px){
+    position: relative;
+    bottom: auto;
+    right: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.ad-img-height {
+  border-bottom: 0;
+  &:first-of-type{
+    border-bottom: 1px solid #ccc;
+    padding-top: 0;
+  }
+  >a{
+    display: block;
+
+    .sidebar-thumbnail-image{
+      width: 27%;
+      float: none;
+      display: inline-block;
+    }
+    .sidebar-content {
+      width: 63%;
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+    }
+  }
+}
+.our-ad{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar-content h5{
+  color: #333333;
+}
+.sidebar-content p{
+  color: #999;
+}
+
+.delete-gallery-photo{
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background: url(https://hoapa.pagepipe.org/resources/hoapa/dist/images/close-icon-white.png);
+  background-color: rgba(0,0,0,.48);
+  background-repeat: no-repeat;
+  z-index: 10;
+  left: 0;
+  transition: opacity .1s cubic-bezier(0,1.22,1,.82);
+  width: 30px;
+  height: 35px;
+  background-position: center center;
+}
+
+.upload-img:hover .delete-gallery-photo {
+  opacity: 1;
+}
+
+
+// Fix for upload images section on post-project page
+.contact-phase-new .upload-img.btn-file {
+  width: 88%;
+  margin-top: 3px;
+  float: right;
+  height: 231px;
+
+  &.dummy-upload{
+    border: 3px dashed #91C11E;
+    margin: 3px;
+    .delete-gallery-photo{
+      display: none !important;
+    }
+  }
+}
+.contact-phase-new .upload-image.btn-file {
+  position: relative;
+  overflow: hidden;
+  width: 41%;
+  height: 112px;
+  background: #fff;
+  border: none;
+  padding: 0;
+  font-size: 17px;
+  float: left;
+  &.dummy-upload{
+    border: 3px dashed #91C11E;
+    margin: 3px;
+    .delete-gallery-photo{
+      display: none !important;
+    }
+  }
+}
+.contact-phase-new .upload-img.btn-file>img, .contact-phase-new .upload-image.btn-file>img {
+  transform: scale(1.3);
+}
+
+.contact-phase-new .upload-image.btn-file{
+  margin: 3px;
+}
+.after-project-headline{
+  
+}
+.hoapa-gallery.grid-left{
+  padding-bottom: 0;
+}
+
+.project-page-slider-nav .slick-slide>img {
+  height: 78px;
+  object-fit: cover;
+}
+
+.show-less {
+  height: 122px;
+  overflow: hidden;
+}
+.show-as-is{
+  white-space: pre-line;
+}
+.show-more{
+  height: auto;
+}
+.profile-body .user-detail {
+  min-height: 173px;
+}
+#share-box {
+  min-height: 123px;
+}
+
+// Css for unlinking the logo
+.visible-post-project{
+  display: none !important;
+}
+#js-postproject-header .hidden-post-project{
+  display: none;
+}
+#js-postproject-header .visible-post-project{
+  display: block !important;
+  cursor: default;
+}
+
+.slick-slider .slick-next.slick-disabled, .slick-slider .slick-prev.slick-disabled{
+  z-index: -1;
+}
+.hoapa-chat-page{
+  .top-padding{
+    padding-top: 81px;
+  }
+}
+.comments-wrapper-new{
+  .show-less{
+    height: 430px;
+  }
+  .show-more{
+    height: auto;
+  }
+}
+
+.va-middle{
+  display: inline-block;
+  vertical-align: middle;
+}
+.tag-protected-ad{
+  width: 72px;
+}
+.share-buttons-arrow h1 {
+  color: #ff7519;
+}
+
+.dropdown-menu>li>a.text-orange {
+  color: #ff6518;
+  &:hover{
+    color: #fff;
+  }
+}
+.has-custom-grid, .top-padding{
+  padding-top: 59px;
+  @media (max-width: 767px){
+    padding-top: 0;
+  }
+}
+.has-custom-grid, .top-padding {
+  @media (min-width: 1200px){
+    padding-top: 59px;
+  }
+}
+.navbar {
+  @media (min-width: 1200px){
+    padding: 5px 0;
+    padding-top: 8px;
+  }
+  @media (max-width: 1199px) and (min-width: 992px){
+   padding: 5px 0;
+   padding-top: 8px;
+ }
+}
+button{
+  outline: 0 !important;
+}
+.navbar-toggle{
+  @media screen and (max-width: 767px){
+    margin: 10px 0;
+  }
+}
+.subject-btn{
+ span.bs-caret{
+  display: none;
+} 
+}
+.attribute-tailor{
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0,0,0,.48);
+  color: #fff;
+  padding: 11px;
+}
+.cover-profile-uploader:hover .delete-gallery-photo, .profile-picture-uploader:hover .delete-gallery-photo{
+  opacity: 1;
+}
+.cover-profile-uploader:hover .attribute-tailor, .profile-picture-uploader:hover .attribute-tailor{
+  display: block;
+}
+
+/* The sub-comments should have a smaller profile picture like on youtube. That way it’s easier on the eyes */
+.appended-list .user-image {
+  width: 60px;
+  height: 79px;
+}
+
+/* Share .share-buttons-arrow position changed because of removing one last ling */
+.share-buttons-arrow{
+  top: -68px;
+  @media screen and (max-width: 1024px){
+    top: 0;
+  }
+}
+
+/* Quotes area should have prices/label in line with the main headline */
+/* https://hoapa.pagepipe.org/project/I-need-a-good-massage-therapist-based-in-West-Auckland-Severe-backpai-166 */
+.quotes-wrapper .common-list-area-new > li{
+  overflow: hidden;
+  .user-image{
+    margin-bottom: 0;
+  }
+  &:hover{
+    background: #e9eaec;
+  }
+}
+.btn-common{
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  padding: 9px 20px;
+  color: #fff!important;
+  border: 0;
+  min-width: 139px;
+  background: #ff6518;
+  @media screen and (max-width: 767px){
+    margin-left: 0;
+  }
+}
+.btn-dark{
+  background-color: #3e3e3e !important;
+}
+.btn-danger:hover, .btn-danger:focus{
+  background-color: #ff6518 !important;
+}
+.hoapa-textarea{
+  padding: 7px 4px 7px 16px;
+}
+
+.hoapa-navigation .navbar-nav>li a:after{
+  bottom: 0;
+  width: 1px;
+  height: 20px;
+  right: 0;
+  top: 11px;
+  color: transparent;
+  content: "";
+  position: absolute;
+  background: transparent;
+  border-left: 1px solid #91c11e;
+  @media screen and (max-width: 767px){
+    border: 0;
+    font-weight: 300;
+  }
+}
+#js-join-button:after, #js-login-button:after, .last #js-join-button:after, .last #js-login-button:after {
+  bottom: 0;
+  right: 0;
+  top: 10px;
+  color: transparent;
+  background: transparent;
+  position: absolute;
+  content: "";
+  border-left: 1px solid #91c11e;
+  @media screen and (max-width: 767px){
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+    border: 0;
+  }
+}
+#js-join-button, #js-login-button, .last #js-join-button, .last #js-login-button {
+ @media screen and (max-width: 767px){
+  width: 100%;
+  text-align: left;
+  padding-left: 8px;
+  font-weight: 400;
+  color: #000;
+}
+}
+
+// get-access-btn transaprency on hover gone because of btn-danger color should not change Fix
+.get-access-btn{
+  color: #fff;
+  &:hover{
+    background-color: rgba(255,101,24,.85) !important;
+  }
+}
+
+.early-accessbody{
+  background: url(https://hoapa.pagepipe.org/resources/hoapa/dist/images/earlyaccess-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#bs-example-navbar-collapse-1{
+  float: right;
+}
+
+.respond-button {
+    color: #d2d2d4 !important;
+}
+.tokenfield .token .token-label{
+  display: inline;
+}
+
+// Don't need the stars anymore
+.icon-box .icon-star {
+    display: none;
+}
+.contact-phase-new .upload-image.btn-file{
+  @media screen and (max-width: 480px){
+    height: 90px;
+  }
+}
+.contact-phase-new .upload-img.btn-file{
+ @media screen and (max-width: 480px){
+    max-height: 185px;
+  } 
+}
+.contact-phase-new .upload-img.btn-file>img{
+  @media screen and (max-width: 480px){
+    height: 100%;
+  }
+}
+
+.contact-phase-new .upload-image.btn-file>img{
+  @media screen and (max-width: 480px){
+    max-width: 100%;
+    height: 100%;
+  }
+}
+.input-placeholder.tokenfield{
+  font-weight: 400;
+    color: #000;
+    position: absolute;
+    bottom: 29px;
+    z-index: 1;
+    margin-top: -9px;
+    height: 37px;
+    left: 32px;
+    padding-top: 9px;
+    width: 92%;
+    text-align: center;
+    padding-left: 0;
+    left: 16px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.btn-smart{
+  width: 96px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.header-note{
+    color: #ff7519;
+    font-size: 21px;
+    margin: 0;
+    font-family: "Merriweather Sans",sans-serif;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+    @media screen and (max-width: 600px){
+      font-size: 16px;
+    }
+}

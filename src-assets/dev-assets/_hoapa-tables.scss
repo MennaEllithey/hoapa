@@ -1,0 +1,400 @@
+.footable {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+	border: solid #ccc 1px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	font-family: 'trebuchet MS' , 'Lucida sans' , Arial;
+	font-size: 14px;
+	color: #444;
+}
+
+.footable.breakpoint > tbody > tr > td.expand {
+	background: url('img/plus.png') no-repeat 5px center;
+	padding-left: 40px;
+}
+
+.footable.breakpoint > tbody > tr.footable-detail-show > td.expand {
+	background: url('img/minus.png') no-repeat 5px center;
+}
+
+.footable.breakpoint > tbody > tr.footable-row-detail {
+	background: #eee;
+}
+
+.footable > tbody > tr:hover {
+	background: #fbf8e9;
+}
+
+.footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
+	cursor: pointer;
+}
+
+.footable > tbody > tr > td, .footable > thead > tr > th {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	text-align: left;
+}
+
+.footable > tbody > tr > td.footable-cell-detail {
+	border-left: none;
+}
+
+.footable > thead > tr > th, .footable > thead > tr > td {
+	background-color: #dce9f9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+	background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: linear-gradient(to bottom, #ebf3fc, #dce9f9);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	border-top: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.footable > thead > tr:first-child > th.footable-first-column, .footable > thead > tr:first-child > td.footable-first-column {
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+
+.footable > thead > tr:first-child > th.footable-last-column, .footable > thead > tr:first-child > td.footable-last-column {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+.footable > thead > tr:first-child > th.footable-first-column.footable-last-column, .footable > thead > tr:first-child > td.footable-first-column.footable-last-column {
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+
+.footable > tbody > tr:last-child > td.footable-first-column {
+	-moz-border-radius: 0 0 0 6px;
+	-webkit-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+}
+
+.footable > tbody > tr:last-child > td.footable-last-column {
+	-moz-border-radius: 0 0 6px 0;
+	-webkit-border-radius: 0 0 6px 0;
+	border-radius: 0 0 6px 0;
+}
+
+.footable > tbody > tr:last-child > td.footable-first-column.footable-last-column {
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
+
+.footable > thead > tr > th.footable-first-column, .footable > thead > tr > td.footable-first-column,
+.footable > tbody > tr > td.footable-first-column {
+	border-left: none;
+}
+
+.footable > tbody img {
+	vertical-align:middle;
+}
+
+.footable > tfoot > tr > th, .footable > tfoot > tr > td {
+	background-color: #dce9f9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+	background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+	background-image: linear-gradient(to bottom, #ebf3fc, #dce9f9);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	border-top: 1px solid #ccc;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	padding: 10px;
+}
+// Footable css end
+.hoapa-open-ads-table{
+	tbody{
+		tr{
+			td{
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+	}
+}
+.hoapa-tabbable{
+	padding: 0 25px;
+	@media screen and (max-width: 767px){
+		padding : 0;
+	}
+	.nav-tabs{
+		border-bottom: 0;
+		padding: 0 2%;
+		overflow: hidden;
+
+		@media screen and (max-width: 767px){
+			height: 45px;
+			overflow: hidden;
+		}
+		>li{
+			a{
+				border-bottom: 0;
+				font-size: 21px;
+				border-radius: 0;
+				color:#000;
+				margin-right: 0;
+			}
+			&.active > a {
+				color: #fff;
+				background-color: #94c435;
+				border: 0;
+				border-bottom-color: transparent;
+				cursor: default;
+				border-radius: 3px;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				margin: 0;
+			}
+		}
+	} 
+}
+.borderless td, .borderless th, .borderless thead > tr > th {
+	border: none;
+	border-top: none !important;
+	border-bottom: 0;
+}
+.hoapa-open-ads-table{
+	text-align: center;
+	tr{
+		> td{
+			&:first-of-type{
+				text-align: left;
+				padding-left: 5px;
+				max-width: 230px;
+				overflow: hidden;
+				>a {
+					max-width: 100%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					display: inline-block;
+					@media screen and (max-width: 767px){
+						white-space: pre-wrap;
+						margin-right: 50px;
+						height: 28px;
+					}
+				}
+				@media screen and (max-width: 767px){
+					background: url("../images/arrow-down.png");
+					background-size: 15px;
+					background-repeat: no-repeat;
+					padding-left: 0;
+					max-width: 100%;
+					background-position: 98% 12px;
+					&.footable-cell-detail{
+						background: transparent;
+					}
+				}
+			}
+		}
+		&.open{
+			> td:first-of-type{
+				@media screen and (max-width: 767px){
+					background: url("../images/arrow-up.png");
+					background-size: 15px;
+					background-repeat: no-repeat;
+					background-position: 98% 12px;
+				}
+			}
+		}
+	}
+	thead{
+		tr{
+			th{
+				text-align: center;
+				background-color: #94c435;
+				color: #fff;
+				font-size: 21.33px;
+				font-weight: normal;
+				&:first-of-type{
+					border-bottom-left-radius: 3px;
+					border-top-left-radius: 3px;
+				}
+				&:last-of-type{
+					border-bottom-right-radius: 3px;
+					border-top-right-radius: 3px;
+				}
+			}
+		}
+	}
+	a{
+		font-size: 20.33px;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.footable-row-detail-inner{
+		text-align: center;
+	}
+	.icon-bx {
+		@media screen and (max-width: 767px){
+			width: auto !important;
+		}
+	}
+}
+.hoapa-ads-pagination{
+	li a {
+		margin: 0 3px;
+		padding: 4px 5px;
+		color: #000;
+	}
+	.active{
+		a{
+			box-shadow: 1px 1px 2px #000;
+		}
+	}
+
+	li:first-child > a{
+		margin-left: 0;
+		border-bottom-left-radius: 3px;
+		border-top-left-radius: 3px;
+	}
+	li:last-child > a{
+		margin-left: 0;
+		border-bottom-right-radius: 3px;
+		border-top-right-radius: 3px;
+
+		// Adding padding left and right because next is a smaller word than Previous
+		width: 80px;
+		text-align: center;
+
+		// another solution would be
+		// padding-left: 20px;
+		// padding-right: 21px;
+	}
+}
+
+
+.hoapa-open-ads-table{
+	th.footable-last-column.footable-first-column{
+		@media screen and (max-width: 767px){
+			position: absolute;
+			z-index: -1000000;
+			left: -100%;
+		}
+	}
+}
+.hoapa-open-ads-table thead tr th {
+	@media screen and (max-width: 767px){
+		position: absolute;
+		z-index: -1000000;
+		left: -100%;
+	}
+}
+
+
+// Hoapa mobile nav tabs
+.hoapa-nav-tabs-mobile{
+	@media screen and (max-width: 767px){
+		background: #94c435;
+		text-align: center;
+		width: 100%
+	}
+}
+
+.hoapa-nav-tabs-mobile > li {
+	@media screen and (max-width: 767px){
+		display: none;
+	}
+}
+.hoapa-nav-tabs-mobile > li.active {
+	@media screen and (max-width: 767px){
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	> a {
+		@media screen and (max-width: 767px){
+			color: #fff;
+			background-color: #597b11 !important;
+			width: 240px;
+			float: none;
+			text-align: center;
+			margin: 0 auto !important;
+		}
+	}
+}
+
+.hoapa-nav-tabs-navigation{
+	@media screen and (min-width: 768px){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.hoapa-nav-tabs-navigation{
+		position: relative;
+		.hoapa-nav-prev{
+			position: absolute;
+			top: -35px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		.hoapa-nav-next{
+			position: absolute;
+			top: -35px;
+			right: 0;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}	
+}
+.btn-danger{
+	border-color: #ff7519;
+	&:hover, &:focus, &:active{
+		background-color: #ff7519;
+		border-color: #ff7519;
+	}
+}
+
+
+// Hoapa My work Page styles
+.hoapa-tabbable{
+	.hoapa-sub-nav-tabs{
+		padding: 0;
+	}	
+}
+.hoapa-sub-nav-list{
+	width: 101%;
+	background: #8EC221;
+	border-radius: 3px;
+	padding: 0;
+	padding-bottom: 5px;
+	text-align: center;
+	>li{
+		padding-top: 5px;
+		display: inline-block;
+		>a{
+			padding: 5px;
+			display: block;
+			color: #fff;
+			border-radius: 3px;
+		}
+		&.active{
+			a{
+				background: #8ac5ac;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}

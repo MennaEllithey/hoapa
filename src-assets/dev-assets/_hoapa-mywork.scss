@@ -1,0 +1,128 @@
+.hoapa-sub-nav-list li{
+	margin: 0 20px;
+}
+
+.hoapa-ad-data{
+	position: relative;
+	border: 1px solid #d4d4d4;
+	margin: -1px;
+	padding-right: 6px;
+	padding-top: 5px;
+	margin-bottom: 10px;
+	&:hover{
+		background-color: #eeeeee;
+	}
+
+	.featured-bx2, .top-ad2{
+		top: -14px;
+	}
+}
+.hoapa-ad-title-container{
+	display: inline-block;
+	@media screen and (min-width: 1200px){
+		width: 640px;
+	}
+	@media screen and (max-width: 992px){
+		width: 405px;
+	}
+	@media screen and (max-width: 767px){
+		width: 305px;
+	}
+	@media screen and (max-width: 590px){
+		width: 100%;
+		padding: 5px;
+	}
+}
+.hoapa-ad-title{
+	vertical-align: top;
+	margin-bottom: 0;
+	display: block;
+	margin-top: 0;
+	color: #44619d;
+}
+
+.ad-title-link-thumblink{
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.my-work-social-icons{
+	position: relative;
+	z-index: 10;
+	.btn-ad{
+		margin: 0;
+		@media screen and (max-width: 767px){	
+			width: 100%;
+		}
+		@media screen and (max-width: 590px){
+			margin: 0 !important;
+			margin-bottom: 5px !important;
+		}
+	}
+}
+.my-work-social-icons ul{
+	margin-bottom: 12px;
+	margin-top: 2px;
+	@media screen and (max-width: 767px){
+		text-align: center;
+	}
+	@media screen and (max-width: 590px){
+		margin-bottom: 9px;
+		margin-top: 9px;
+	}
+}
+.my-work-social-icons ul > li > a{
+	width: 33px;
+	margin-right: 0;
+	@media screen and (max-width: 767px){
+		width: 30px;
+	}
+	@media screen and (max-width: 590px){
+		width: 55px;
+	}
+}
+.hoapa-workad-category{
+
+}
+.hoapa-workad-city{
+
+}
+.ad-featured-image{
+	@media screen and (min-width: 591px){
+		vertical-align: top;
+		max-width: 86px;
+		min-height: 120px;
+		max-height: 125px;
+		-o-object-fit: cover;
+		object-fit: cover;
+		margin-top: -6px;
+	}
+	@media screen and (max-width: 590px){
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		max-height: 200px;
+	}
+}
+#mobile-filter{
+	margin-bottom: 20px;
+	>a.dropdown-toggle{
+		.caret{
+			display: none;
+		}
+	}
+}
+
+.hoapa-ad-data{
+	@media screen and (max-width: 590px){
+		padding-right: 0;
+	}
+	.col-xs-9, .col-xs-3{
+		@media screen and (max-width: 590px){
+			width: 100%;
+		}
+	}
+}

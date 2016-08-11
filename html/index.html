@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+          name="viewport">
+    <meta content="Hoapa NZ's best service site" name="description">
+    <meta content="no" name="msapplication-tap-highlight">
+    <title>Hoapa NZ's best service site</title>
+    <link href="../public/css/app.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="employer-profile-phase advertising-box postad-phase sticky-nav">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Hoapa</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="navMenu" class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../public/images/user.png" /> My Profile <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu drop-down-my-profile">
+                                <li><a href="#" class="invite-friend">Invite friends</a></li>
+                                <li class="dropdown-header you-have-contacts">You have 3 contacts</li>
+                                <li><a href="#" class="invite-friend">View profile</a></li>
+                                <li><a href="#" class="invite-friend">Improve profile</a></li>
+                                <li><a href="#" class="invite-friend">Email alerts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;" data-toggle="modal" data-target="#myModal">Home</a></li>
+                        <li class="dnone"><a href="javascript:;" data-toggle="modal" data-target="#findwork" class="btn btn-danger post-btn">Post ad</a></li>
+
+                        <li class="dropdown">
+                            <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu drop-down-my-profile">
+                                <li><a href="#" class="invite-friend"><b>Hire</b></a></li>
+                                <li><a href="javascript:" class="invite-projects">Post ad</a></li>
+                                <li><a href="javascript:" class="invite-projects">My ads <span></span></a></li>
+                                <li><a href="#" class="invite-friend"><b>Work</b></a></li>
+                                <li><a href="#" class="find-work-drop">Find work</a></li>
+                                <li><a href="#" class="invite-projects">My work <span>(0)</span></a></li>
+                                <li><a href="#" class="invite-friend"><b>Reviews</b></a></li>
+                                <li><a href="#" class="invite-projects">Submit review <span>(10)</span></a></li>
+                                <li><a href="#" class="invite-projects">My reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="dnone"><a href="javascript:;">Messages</a></li>
+                        <li>
+                            <a href="#" data-toggle="" dropdown"="" aria-haspopup="true" aria-expanded="false">Boost <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu drop-down-my-profile">
+                                <li><a href="#">Go PRO</a></li>
+                                <li><a href="#">Boost ad</a></li>
+                                <li><a href="#">Boost profile</a></li>
+                                <li><a href="#">Boost HOAPA</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><i class="fa fa-comment-o icon"></i></a>
+                        </li>
+                        <li class="dnone">
+                            <a href="javascript:;" data-toggle="modal" data-target="#modalregisterpopup" data-dismiss="modal">Logout</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu drop-down-my-profile">
+                                <li><a href="#" class="invite-friend"><b>Hire</b></a></li>
+                                <li><a href="javascript:" class="invite-projects">Post ad</a></li>
+                                <li><a href="javascript:" class="invite-projects">My ads <span></span></a></li>
+                                <li><a href="#" class="invite-friend"><b>Work</b></a></li>
+                                <li><a href="#" class="find-work-drop">Find work</a></li>
+                                <li><a href="#" class="invite-projects">My work <span>(0)</span></a></li>
+                                <li><a href="#" class="invite-friend"><b>Reviews</b></a></li>
+                                <li><a href="#" class="invite-projects">Submit review <span>(10)</span></a></li>
+                                <li><a href="#" class="invite-projects">My reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="dblock"><a href="#" data-toggle="modal" data-target="#findwork" class="btn btn-danger post-btn">Post ad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="top-padding">
+            <div class="contact-phase-new">
+                <div class="section-postad">
+                    <div class="contact-fields-container container">
+                        <div class="bg-white section-padding">
+                            <div class="hoapa-my-ads-listing">
+                                <h1 class="section-heading text-black">Settings</h1>
+
+                                <div class="tabbable hoapa-tabbable">
+                                    <!-- Only required for left/right tabs -->
+                                    <ul class="nav nav-tabs hoapa-nav-tabs-mobile">
+                                        <li class="active"><a href="#tab1" data-toggle="tab">Email alerts</a></li>
+                                        <li><a href="#tab2" data-toggle="tab">Membership</a></li>
+                                    </ul>
+                                    <div class="hoapa-nav-tabs-navigation">
+                                        <img class="hoapa-nav-prev" src="../public/images/prev.png" alt="">
+                                        <img class="hoapa-nav-next" src="../public/images/next.png" alt="">
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab1">
+                                            <table class="responsive-table toggle-circle table table-hover hoapa-open-ads-table borderless table-condensed">
+                                                <thead>
+                                                <th></th>
+                                                <th></th>
+                                                </thead>
+                                            </table>
+                                            <div class="hoapa-tab-body">
+                                                <h3>HIRE alerts: for people who hires services</h3>
+                                                <div class="hoapa-tab-settings-list" style="max-width: 567px; margin: 0 auto;">
+                                                    <table class="toggle-circle table table-hover borderless table-condensed" style=" vertical-align middle;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Receive quotes and updates</td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Instantly</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Receive private messages</td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Instantly</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Know who added you to their contacts</td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Instantly</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="hoapa-tab-body">
+                                                <h3>WORK alerts: for people who hires services</h3>
+                                                <div class="hoapa-tab-settings-list" style="max-width: 567px; margin: 0 auto;">
+                                                    <table class="toggle-circle table table-hover borderless table-condensed" style="vertical-align: middle;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Receive new work offers from <a href="#">main catagories</a></td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Daily digest</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Receive private messages</td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Instantly</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Know who added you to their contacts</td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Instantly</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Receive updates e.g. when clients award you <br /> projects, or competitors challange your quotes</td>
+                                                                <td style="text-align: right;">
+                                                                    <div class="btn-group">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Instantly</button>
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                                            <i class="fa fa-angle-down"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                            <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                                            <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane clearfix" id="tab2">
+                                            <table class="responsive-table toggle-circle table table-hover hoapa-open-ads-table borderless table-condensed">
+                                                <thead>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                </thead>
+                                            </table>
+                                            <div class="featruesSection clearfix mbot100">
+                                                <div class="col-md-7 col-sm-12 col-xs-12">
+                                                    <div class="clearfix">
+                                                        <div class="featuresTable">
+                                                            <h1 class="featureTable-heading"><small class="featureTable-small">You are</small>PRO</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tabless">
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Quote on projects</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Ask questions</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Display of your contact</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Status PRO</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Detailed company/service profile with photos</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Email job alerts</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                        <div class="clearfix rowStyle">
+                                                            <h4 class="itemStyle">Contact details of client</h4>
+                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6 pull-right text-center">
+                                                        <a href="#">Cancel PRO</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 col-sm-12 col-xs-12 AdSection">
+                                                    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                                    <ins class="adsbygoogle center-block"
+                                                         style="width:300px;height:250px"
+                                                         data-ad-client="ca-pub-7548335119849446"
+                                                         data-ad-slot="9543222930"></ins>
+                                                    <script>
+                                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                                    </script>
+                                                </div>
+                                            </div>
+                                            <div class="centeredBlock mbot30 hidden-only-xs">
+                                                <span class="basicLabel">Buy PRO access for limited days</span>
+                                                <div class="btn-group ">
+                                                    <button type="button" class="btn btn-default dropdown-toggle btn-smart customDropdown" data-toggle="dropdown">Select</button>
+                                                    <button type="button" class="btn btn-default dropdown-toggle customDropdownToggle" data-toggle="dropdown">
+                                                        <i class="fa fa-caret-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                        <li><a href="/project/I-need-a-drum-tutor-for-my-son--211#submittedQuotes">Award</a></li>
+                                                        <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Edit ad</a></li>
+                                                        <li><a data-toggle="collapse" href="#reportbox" aria-expanded="false" aria-controls="reportbox">Close ad</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="centeredBlock hidden-only-xs">
+                                                Total cost:	$6.00
+                                            </div>
+                                            <div class="centeredBlock ">
+                                                <div class="input-group">
+                                                    <input id="copyTxt" class="form-control" type="text" value="Copy me">
+                                                    <span class="input-group-button">
+                                                        <button class="copyBtn" type="button" data-clipboard-demo="" data-clipboard-target="#copyTxt">
+                                                            <img class="clippy" src="../public/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-color-set">
+                    <div class="container">
+                        <div class="bg-white"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="sub-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <h3 class="dislay-h3">
+                                Useful information <span>
+                                    <img alt="Useful Information" src="../public/images/img-arrow-down.png">
+                                </span>
+                            </h3>
+                            <ul class="nav footer-drop-down hide-nav-footer">
+                                <li>
+                                    <a href="javascript:">FAQ</a>
+                                </li>
+                                <li>
+                                    <a aria-controls="about2" aria-expanded="true" class="about-rotate dnone" data-parent=".footer-drop-down" data-toggle="collapse" href="#about2" id="footer-id2">
+                                        About <i class="change fa fa-sort-desc sub-caret"></i>
+                                    </a><a class="about-rotate dblock" href="javascript:void(0)" id="footer-id">
+                                        About
+                                        <i class="change fa fa-sort-desc"></i>
+                                    </a>
+                                    <div class="collapse about-drop-down dnone" id="about2" role="tabpanel">
+                                        <p>
+                                            HOAPA is a marketplace for NZ services. Get anything done from
+                                            cleaning to reparing, constructing, transporting, teaching, caring,
+                                            coaching, marketing, editing, farming and more. <a href="#">
+                                                Post a
+                                                free ad
+                                            </a>. Get free quotes. Hire a service. No lengthy searching in
+                                            business directories anymore. If you <a href="#">offer a service</a>,
+                                            here you will find work easier than before. Start to hire services
+                                            and find more work on HOAPA.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:">Advertising</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">Investor contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <h3 class="dislay-h3">
+                                HOAPA features <span>
+                                    <img alt="HOAPA features"
+                                         src="../public/images/img-arrow-down.png">
+                                </span>
+                            </h3>
+                            <ul class="nav footer-drop-down hide-nav-footer">
+                                <li>
+                                    <a href="javascript:">Hire: Get free quotes</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">Work: List your service</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">Policies</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">Join HOAPA</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <h3>Tell your friends</h3>
+                            <ul id="social-icons" class="social-icons">
+                                <li>
+                                    <a href="javascript:">
+                                        <img alt="Google Plus" src="../public/images/tell-friend.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">
+                                        <img alt="Twitter" src="../public/images/twitter-tell.svg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:">
+                                        <img alt="Facebook" src="../public/images/tell-facebook.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="collapse about-drop-down for-desktop" id="about" role="tabpanel">
+                            <p>
+                                HOAPA is a social marketplace for local services. Get anything done
+                                from cleaning to reparing, constructing, transporting, teaching, caring,
+                                coaching, marketing, editing, farming and more. <a href="#">
+                                    Post a free
+                                    ad.
+                                </a> Get free quotes. Hire a service. No lengthy searching in
+                                business directories anymore. If you <a href="#">offer a service,</a>
+                                here you will find work easier than before. Start to hire services and
+                                find more work on HOAPA. <a href="#">Join now!</a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="text-center" id="para-visit">
+                        &copy; 2016 Hoapa.co.nz | All
+                        rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../public/js/main.js"></script>
+    <script type="text/javascript" src="../public/js/slick.js"></script>
+    <script src="../public/js/footable.js"></script>
+    <script>
+        // Script for responsive table
+        var responsiveTableTr = $(".responsive-table tr td:nth-child(1)");
+        responsiveTableTr.on('click', function () {
+            var parentTr = $(this).parents("tr")
+            if (parentTr.hasClass("open")) {
+                parentTr.removeClass("open");
+                parentTr.removeClass("show-overflow");
+            }
+            else {
+                parentTr.addClass("open");
+                setTimeout(function () {
+                    parentTr.addClass("show-overflow");
+                }, 320);
+            }
+
+        });
+        responsiveTableTr.children().on('click', function (e) {
+            e.stopPropagation();
+        });
+        // Script for responsive table end
+        $(".has-placeholder .input-placeholder").on('click', function () {
+            $(this).toggle();
+            $(this).prev('input').focus();
+        });
+        $(".has-placeholder input, .has-placeholder .hoapa-textfield").on('focusout', function () {
+            if ($(this).val()) {
+            }
+            else {
+                $(this).next('.input-placeholder').toggle();
+            }
+        });
+        new Clipboard('.copyBtn');
+        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+        if (isSafari) {
+            $(".copyBtn").click(function () {
+                var text = $('#copyTxt').val();
+                window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+
+            })
+        }
+
+        
+    </script>
+    <script src="../public/js/modernizr-min.js" type="text/javascript"></script>
+</body>
+</html>
