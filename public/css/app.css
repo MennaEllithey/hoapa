@@ -29930,7 +29930,7 @@ footer .social-icons li a img {
 
 @media (max-width: 991px) {
   .navbar-right {
-    margin-right: -30px !important;
+    margin-right: -15px !important;
   }
   .border-slider a.btn-file {
     display: block;
