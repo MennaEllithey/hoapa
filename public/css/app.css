@@ -37724,15 +37724,6 @@ button {
   }
 }
 
-.dropdown-menu {
-  padding: 10px;
-}
-
-.dropdown-menu a {
-  font-size: 15px;
-  padding-left: 0 !important;
-}
-
 .dropdown-heading {
   padding: 0;
 }
@@ -37789,6 +37780,7 @@ button {
 
 .dropdown-menu {
   display: none !important;
+  padding: 10px;
 }
 
 @media screen and (max-width: 767px) {
@@ -37801,6 +37793,12 @@ button {
     border: 0;
     box-shadow: none;
   }
+}
+
+.dropdown-menu a {
+  font-size: 15px;
+  padding-left: 0 !important;
+  font-weight: 300 !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -37875,6 +37873,7 @@ button {
 @media (max-width: 991px) {
   #navMenu a:not(.btn) {
     font-size: 16px;
+    font-weight: 500;
   }
 }
 
@@ -37911,8 +37910,7 @@ button {
   .navbar-nav > li:not(.no-borders) {
     min-height: 50px;
     border-bottom: 1px solid #edf1e5;
-    padding: 0 10px;
-    text-align: center;
+    padding: 0 30px;
   }
 }
 
@@ -37955,7 +37953,6 @@ button {
   #js-join-button, #js-login-button {
     padding: 15px 8px;
     font-size: 16px;
-    text-align: center;
   }
 }
 
