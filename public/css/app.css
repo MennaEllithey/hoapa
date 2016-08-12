@@ -37835,13 +37835,20 @@ a {
 
 @media (max-width: 767px) {
   .itemStyle {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
+    padding-bottom: 30px;
   }
 }
 
 .rowStyle:first-child > * {
   padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .rowStyle:first-child > * {
+    padding-top: 30px;
+  }
 }
 
 .markSTyle {
@@ -37853,6 +37860,12 @@ a {
   padding-bottom: 50px;
   border-bottom: 0;
   border-top: 0;
+}
+
+@media (max-width: 767px) {
+  .markSTyle {
+    padding-bottom: 30px;
+  }
 }
 
 .rowStyle:last-child .markSTyle {

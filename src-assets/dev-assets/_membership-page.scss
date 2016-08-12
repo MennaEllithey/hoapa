@@ -108,14 +108,18 @@ a {
     display: table-cell;
     padding-bottom: 50px;
     @media (max-width: 767px) {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 18px;
+        padding-bottom: 30px;
     }
 }
 
 .rowStyle:first-child {
     > * {
         padding-top: 50px;
+        @media (max-width: 767px) {
+            padding-top: 30px;
+        }
     }
 }
 
@@ -128,6 +132,9 @@ a {
     padding-bottom: 50px;
     border-bottom: 0;
     border-top: 0;
+    @media (max-width: 767px) {
+        padding-bottom: 30px;
+    }
 }
 
 .rowStyle:last-child {
