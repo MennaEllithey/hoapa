@@ -37716,6 +37716,7 @@ button {
 
 .navbar {
   overflow: visible;
+  padding: 5px 0;
 }
 
 .navbar .navbar-brand {
@@ -37920,10 +37921,6 @@ footer:before {
     background-position-x: center;
     background-repeat: repeat-x;
   }
-}
-
-.custom-padding {
-  margin-top: 40px;
 }
 
 @media (max-width: 767px) {

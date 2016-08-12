@@ -1,5 +1,6 @@
 .navbar {
-    overflow: visible;
+    overflow: visible;    
+    padding: 5px 0;
     .navbar-brand {
         background-size: auto 40px;
         background-position: 0 5px;
@@ -191,7 +192,6 @@ footer {
     }
 }
 .custom-padding{    
-    margin-top: 40px;
     @media (max-width: 767px) {
         padding: 5px 10px;
         margin: 0;
