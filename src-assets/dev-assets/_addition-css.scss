@@ -3330,7 +3330,7 @@ footer {
     }
     .nav {
       margin-top: 2px!important;
-      li {
+      > li {
         &:not(.last):before {
           bottom: 0;
           width: 1px;
@@ -3338,7 +3338,7 @@ footer {
           right: -1px;
           top: 13px;
         }
-        a {
+        > a {
           font-size: 20px;
           font-weight: 300;
           padding: 10px 15px;
@@ -3417,7 +3417,7 @@ footer {
       padding: 0;
     }
     .nav {
-      li {
+      > li {
         &:not(.last):before {
           bottom: 0;
           width: 1px;
@@ -3425,7 +3425,7 @@ footer {
           right: -1px;
           top: 13px;
         }
-        a {
+        > a {
           font-size: 20px;
           font-weight: 300;
           padding: 11px 15px;
@@ -3507,7 +3507,7 @@ footer {
     }
     .nav {
 
-      li {
+      > li {
         &:not(.last):before {
           bottom: 0;
           width: 1px;
@@ -3515,7 +3515,7 @@ footer {
           right: -1px;
           top: 15px;
         }
-        a {
+        > a {
           font-size: 20px;
           font-weight: 300;
           padding: 11px 15px;
@@ -3595,7 +3595,7 @@ footer {
     .nav {
 
       margin-bottom: 0px;
-      li {
+      > li {
         &:not(.last):before {
           bottom: 0;
           width: 1px;

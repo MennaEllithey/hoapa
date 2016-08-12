@@ -57,7 +57,7 @@
             color: #000;
         }
         .nav > li,
-        .nav > li > ul > li
+        .nav > li > ul > li.dropdown-heading
         {
             @media screen and (max-width: 767px)
             {
@@ -130,7 +130,7 @@
     }
     .dropdown-menu
     {
-        margin-top: 8px !important;
+        margin-top: 8px;
 
         border-radius: 4px !important;
         @media screen and (max-width: 767px)
@@ -173,9 +173,8 @@
         padding-left: 8px;
         @media screen and (max-width: 767px)
         {
-            font-size: 21px;
 
-            padding-left: 25px;
+            padding: 5px 0;
         }
     }
     .navbar-collapse.in
