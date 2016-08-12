@@ -25,66 +25,23 @@
                     <a class="navbar-brand" href="/">Hoapa</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul id="navMenu" class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../public/images/user.png" /> My Profile <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu drop-down-my-profile">
-                                <li><a href="#" class="invite-friend">Invite friends</a></li>
-                                <li class="dropdown-header you-have-contacts">You have 3 contacts</li>
-                                <li><a href="#" class="invite-friend">View profile</a></li>
-                                <li><a href="#" class="invite-friend">Improve profile</a></li>
-                                <li><a href="#" class="invite-friend">Email alerts</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:;" data-toggle="modal" data-target="#myModal">Home</a></li>
-                        <li class="dnone"><a href="javascript:;" data-toggle="modal" data-target="#findwork" class="btn btn-danger post-btn">Post ad</a></li>
-
-                        <li class="dropdown">
-                            <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu drop-down-my-profile">
-                                <li><a href="#" class="invite-friend"><b>Hire</b></a></li>
-                                <li><a href="javascript:" class="invite-projects">Post ad</a></li>
-                                <li><a href="javascript:" class="invite-projects">My ads <span></span></a></li>
-                                <li><a href="#" class="invite-friend"><b>Work</b></a></li>
-                                <li><a href="#" class="find-work-drop">Find work</a></li>
-                                <li><a href="#" class="invite-projects">My work <span>(0)</span></a></li>
-                                <li><a href="#" class="invite-friend"><b>Reviews</b></a></li>
-                                <li><a href="#" class="invite-projects">Submit review <span>(10)</span></a></li>
-                                <li><a href="#" class="invite-projects">My reviews</a></li>
-                            </ul>
-                        </li>
-                        <li class="dnone"><a href="javascript:;">Messages</a></li>
-                        <li>
-                            <a href="#" data-toggle="" dropdown"="" aria-haspopup="true" aria-expanded="false">Boost <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu drop-down-my-profile">
-                                <li><a href="#">Go PRO</a></li>
-                                <li><a href="#">Boost ad</a></li>
-                                <li><a href="#">Boost profile</a></li>
-                                <li><a href="#">Boost HOAPA</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><i class="fa fa-comment-o icon"></i></a>
-                        </li>
-                        <li class="dnone">
-                            <a href="javascript:;" data-toggle="modal" data-target="#modalregisterpopup" data-dismiss="modal">Logout</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu drop-down-my-profile">
-                                <li><a href="#" class="invite-friend"><b>Hire</b></a></li>
-                                <li><a href="javascript:" class="invite-projects">Post ad</a></li>
-                                <li><a href="javascript:" class="invite-projects">My ads <span></span></a></li>
-                                <li><a href="#" class="invite-friend"><b>Work</b></a></li>
-                                <li><a href="#" class="find-work-drop">Find work</a></li>
-                                <li><a href="#" class="invite-projects">My work <span>(0)</span></a></li>
-                                <li><a href="#" class="invite-friend"><b>Reviews</b></a></li>
-                                <li><a href="#" class="invite-projects">Submit review <span>(10)</span></a></li>
-                                <li><a href="#" class="invite-projects">My reviews</a></li>
-                            </ul>
-                        </li>
-                        <li class="dblock"><a href="#" data-toggle="modal" data-target="#findwork" class="btn btn-danger post-btn">Post ad</a></li>
-                    </ul>
+                    <ul  id="navMenu" class="nav navbar-nav navbar-right hoapa-profile-navigation">
+                            <li class="no-borders visible-xs"><a href="/post-project" class="btn btn-danger btn-common btn-qoutes top-margin-xs">Get free quotes</a></li>
+                            <li class="no-borders visible-xs"><button type="button" class="btn btn-common btn-dark">Find work</button></li>
+                            <li> <button type="button" id="js-join-button" data-toggle="modal" data-target="#join_social_Modal">Join</button></li>
+                            <li class=""> <button type="button" id="js-login-button">Login</button> </li>
+                                                            <li><a href="#how-it-works" id="hiworks">How it works</a></li>
+                                <li><a href="#about" class="about-link">About</a></li>
+                                <li class=" last "><a href="#myMdal" data-toggle="modal" data-target="#myModal">FAQ</a></li>
+                                                        
+                            <li class="no-borders hidden-xs">
+                            <button type="button" class="btn btn-common btn-dark js-join-find-work-button no-margin-left">Find work</button>
+                            </li>
+                            <li class="no-borders hidden-xs">
+                                                        <a href="/post-project" id="showOnScroll" class="btn btn-danger btn-common btn-qoutes hidden">Get free quotes</a>
+                                                        </li>
+                        </ul>
+                    
                 </div>
             </div>
         </nav>

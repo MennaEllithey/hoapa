@@ -12303,7 +12303,7 @@ footer .social-icons li a.icon-facebook:hover {
   .navbar .nav {
     margin-top: 2px !important;
   }
-  .navbar .nav li:before {
+  .navbar .nav li:not(.last):before {
     bottom: 0;
     width: 1px;
     height: 20px;
@@ -12380,7 +12380,7 @@ footer .social-icons li a.icon-facebook:hover {
     margin: 0 !important;
     padding: 0;
   }
-  .navbar .nav li:before {
+  .navbar .nav li:not(.last):before {
     bottom: 0;
     width: 1px;
     height: 20px;
@@ -12469,7 +12469,7 @@ footer .social-icons li a.icon-facebook:hover {
     margin: 0 !important;
     padding: 0;
   }
-  .navbar .nav li:before {
+  .navbar .nav li:not(.last):before {
     bottom: 0;
     width: 1px;
     height: 20px;
@@ -12549,7 +12549,7 @@ footer .social-icons li a.icon-facebook:hover {
   .navbar .nav {
     margin-bottom: 0px;
   }
-  .navbar .nav li:before {
+  .navbar .nav li:not(.last):before {
     bottom: 0;
     width: 1px;
     height: 20px;
@@ -24266,11 +24266,9 @@ body {
   }
   .navbar-toggle {
     padding: 16px 12px;
-    background-color: #999999;
     border: none !important;
   }
   .navbar-toggle .icon-bar {
-    background: white;
     width: 22px;
     height: 3px;
   }
@@ -25500,7 +25498,6 @@ footer .dislay-h3 span {
   }
   .navbar .nav li a {
     padding: 15px 8px;
-    margin-bottom: 5px !important;
     border-radius: 5px;
     -webkit-border-radius: 5px;
   }
@@ -37593,7 +37590,6 @@ button {
   background: transparent;
   position: absolute;
   content: "";
-  border-left: 1px solid #91c11e;
 }
 
 @media screen and (max-width: 767px) {
@@ -37743,8 +37739,45 @@ button {
 }
 
 #navMenu a:not(.btn) {
-  font-weight: 500;
-  color: #555555;
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  #navMenu .btn {
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: block;
+    margin-bottom: 10px !important;
+    padding: 9px 20px;
+    font-size: 17px;
+    margin-top: 9px !important;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav li:not(.no-borders) {
+    height: 50px;
+    border-bottom: 1px solid #edf1e5;
+    padding: 0 10px;
+  }
+}
+
+#js-join-button, #js-login-button {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 9px 14px;
+}
+
+@media (max-width: 767px) {
+  #js-join-button, #js-login-button {
+    padding: 15px 8px;
+  }
 }
 
 i.icon {
@@ -37968,6 +38001,7 @@ footer:before {
     background: #f6ffe3;
     width: 100%;
     border-bottom: 1px solid #99c63b;
+    padding: 0;
   }
 }
 

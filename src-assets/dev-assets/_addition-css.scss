@@ -3331,7 +3331,7 @@ footer {
     .nav {
       margin-top: 2px!important;
       li {
-        &:before {
+        &:not(.last):before {
           bottom: 0;
           width: 1px;
           height: 20px;
@@ -3418,7 +3418,7 @@ footer {
     }
     .nav {
       li {
-        &:before {
+        &:not(.last):before {
           bottom: 0;
           width: 1px;
           height: 20px;
@@ -3508,7 +3508,7 @@ footer {
     .nav {
 
       li {
-        &:before {
+        &:not(.last):before {
           bottom: 0;
           width: 1px;
           height: 20px;
@@ -3596,7 +3596,7 @@ footer {
 
       margin-bottom: 0px;
       li {
-        &:before {
+        &:not(.last):before {
           bottom: 0;
           width: 1px;
           height: 20px;
@@ -14894,10 +14894,8 @@ body {
   }
   .navbar-toggle {
     padding: 16px 12px;
-    background-color: #999999;
     border: none !important;
     .icon-bar {
-      background: white;
       width: 22px;
       height: 3px;
     }
@@ -16242,7 +16240,6 @@ footer .dislay-h3 span {
 }
 .navbar .nav li a {
   padding: 15px 8px;
-  margin-bottom: 5px !important;
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
