@@ -12474,7 +12474,7 @@ footer .social-icons li a.icon-facebook:hover {
     width: 1px;
     height: 20px;
     right: -1px;
-    top: 9px;
+    top: 15px;
   }
   .navbar .nav li a {
     font-size: 20px;
@@ -37726,6 +37726,12 @@ button {
   }
 }
 
+@media (max-width: 991px) {
+  #navMenu a {
+    font-size: 16px !important;
+  }
+}
+
 #navMenu i:not(.icon) {
   font-size: 15px;
 }
@@ -37744,6 +37750,11 @@ button {
   font-size: 20px;
 }
 
+#navMenu .btn {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 @media (max-width: 767px) {
   #navMenu .btn {
     width: 90% !important;
@@ -37754,6 +37765,17 @@ button {
     font-size: 17px;
     margin-top: 9px !important;
     font-weight: 500;
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 991px) {
+  #navMenu .btn {
+    font-size: 15px !important;
+    min-width: initial;
+    font-weight: 500 !important;
+    padding: 0 10px !important;
+    line-height: 40px;
   }
 }
 
@@ -37762,6 +37784,14 @@ button {
     height: 50px;
     border-bottom: 1px solid #edf1e5;
     padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -37774,9 +37804,10 @@ button {
   padding: 9px 14px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   #js-join-button, #js-login-button {
     padding: 15px 8px;
+    font-size: 16px;
   }
 }
 

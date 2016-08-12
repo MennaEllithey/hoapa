@@ -390,6 +390,17 @@
     <script type="text/javascript" src="../public/js/slick.js"></script>
     <script src="../public/js/footable.js"></script>
     <script>
+    $( document ).ready(function() {
+        $(window).scroll(function () {
+            if (window.innerWidth > 767) {
+                if ($(window).scrollTop() > 600) {
+                    $("#showOnScroll").addClass('quotes-block');
+                } else {
+                    $("#showOnScroll").removeClass('quotes-block');
+                }
+            }
+        });
+    });
         // Script for responsive table
         var responsiveTableTr = $(".responsive-table tr td:nth-child(1)");
         responsiveTableTr.on('click', function () {
@@ -421,17 +432,6 @@
                 $(this).next('.input-placeholder').toggle();
             }
         });
-        new Clipboard('.copyBtn');
-        var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-        if (isSafari) {
-            $(".copyBtn").click(function () {
-                var text = $('#copyTxt').val();
-                window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
-
-            })
-        }
-
-        
     </script>
     <script src="../public/js/modernizr-min.js" type="text/javascript"></script>
 </body>
