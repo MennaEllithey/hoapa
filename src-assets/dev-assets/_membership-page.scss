@@ -57,7 +57,7 @@
         display: block!important;
     }
 }
-.dropdown-menu{
+.nav-dropdown{
     display: none!important;
     padding: 10px;
     @media screen and (max-width: 767px){
@@ -68,21 +68,38 @@
         background-color: transparent;
         border: 0;
         box-shadow: none;
+        margin-left:45px;
+        padding-bottom:0;
     }
     a {
         font-size: 15px;
         padding-left: 0!important;
-        font-weight:300!important
-    }
-    * {
-        @media screen and (max-width: 767px){
-            font-size: 14px!important;
-        }
-    }
-    a {
+        font-weight:300!important;
         @media screen and (max-width: 767px){
             padding: 7px!important;
         }
+    }
+    li {
+        @media screen and (max-width: 767px){
+            border-bottom: 1px solid #edf1e5;
+        }
+    }
+    * {
+        @media screen and (max-width: 767px){
+            font-size: 16px !important;
+            font-weight: 300;
+        }
+    }
+    .dropdown-heading
+    {   @media screen and (max-width: 767px){
+            margin-left: -15px;
+        }
+    }
+}
+.you-have-contacts {
+    @media screen and (max-width: 767px){
+        display: inline;
+        font-size: 14px!important;
     }
 }
 

@@ -90,12 +90,12 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right" id="navMenu">
                     <li class="visible-xs no-borders"><button type="button" class="btn btn-danger btn-common xs-100">Post ad</button></li>
-                    <li class="dropdownss has-miniature-profile-picture">
+                    <li class="dropdown has-miniature-profile-picture">
                         <a href="/profile/" class="dropdown-toggle" data-toggle="dropdown">
                                                       <img src="https://hoapa.pagepipe.org/resources/hoapa/dist/images/profile.png" alt="news-pic1">
                                                         My profile <span class="caret-icon"></span>
                         </a>
-                        <ul class="dropdown-menu dropdown-rtl" >
+                        <ul class="dropdown-menu dropdown-rtl  nav-dropdown" >
                             <li><a href="/profile">Go <div class="pro-symbol" style="right: 0;top: 10px;display: inline-block;">
                                  <div class="pro-text2">PRO</div>
                               </div>now</a></li>
@@ -108,7 +108,7 @@
                     <li><a href="/home">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret-icon"></span></a>
-                        <ul class="dropdown-menu dropdown-rtl" >
+                        <ul class="dropdown-menu dropdown-rtl  nav-dropdown" >
                             <li class="dropdown-heading"><b>Hire</b></li>
                             <li><a class="text-orange" href="/post-project">Post ad</a></li>
                             <li><a href="/my-ads">My ads <span>(0)</span></a></li>
@@ -128,7 +128,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Boost <span class="caret-icon"></span></a>
-                        <ul class="dropdown-menu dropdown-rtl" style="display: none;">
+                        <ul class="dropdown-menu dropdown-rtl nav-dropdown" style="display: none;">
                             <li><a href="#" data-toggle="modal" data-target="#boostAd">Boost my ad</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#boostProfile">Boost my profile</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#boostSite">Boost ServiceFinder</a></li>
@@ -178,7 +178,7 @@
                     <li class="visible-xs"><a href="#">Logout</a></li>
                     <li class="dropdown hidden-xs last">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret-icon bigger-caret-icon"></span></a>
-                        <ul class="dropdown-menu dropdown-rtl" style="display: none;">
+                        <ul class="dropdown-menu dropdown-rtl  nav-dropdown" style="display: none;">
                             <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                             <li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                         </ul>
@@ -536,7 +536,7 @@
     <script src="../public/js/footable.js"></script>
     <script>
     $( document ).ready(function() {
-        $('.dropdown-toggle,[data-toggle="dropdown"]').hover(function(){$(this).next(".dropdown-menu").first().toggle()});
+        $('.dropdown-toggle,[data-toggle="dropdown"]').hover(function(){$(this).next(".nav-dropdown").first().toggle()});
         $('.dropdown-toggle,[data-toggle="dropdown"]').click(function(e){
             e.preventDefault(); 
             //$(this).next(".dropdown-menu").first().slideToggle()

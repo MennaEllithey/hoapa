@@ -753,12 +753,13 @@ select.mobile-device {
 }
 
 .hoapa-navigation .dropdown-heading {
-  padding-left: 8px;
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 767px) {
   .hoapa-navigation .dropdown-heading {
     padding: 5px 0;
+    margin-top: 10px;
   }
 }
 
@@ -37778,13 +37779,13 @@ button {
   display: block !important;
 }
 
-.dropdown-menu {
+.nav-dropdown {
   display: none !important;
   padding: 10px;
 }
 
 @media screen and (max-width: 767px) {
-  .dropdown-menu {
+  .nav-dropdown {
     position: static;
     float: none;
     width: auto;
@@ -37792,24 +37793,46 @@ button {
     background-color: transparent;
     border: 0;
     box-shadow: none;
+    margin-left: 45px;
+    padding-bottom: 0;
   }
 }
 
-.dropdown-menu a {
+.nav-dropdown a {
   font-size: 15px;
   padding-left: 0 !important;
   font-weight: 300 !important;
 }
 
 @media screen and (max-width: 767px) {
-  .dropdown-menu * {
-    font-size: 14px !important;
+  .nav-dropdown a {
+    padding: 7px !important;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .dropdown-menu a {
-    padding: 7px !important;
+  .nav-dropdown li {
+    border-bottom: 1px solid #edf1e5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-dropdown * {
+    font-size: 16px !important;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-dropdown .dropdown-heading {
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .you-have-contacts {
+    display: inline;
+    font-size: 14px !important;
   }
 }
 
