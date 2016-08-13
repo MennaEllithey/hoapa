@@ -752,10 +752,6 @@ select.mobile-device {
   }
 }
 
-.hoapa-navigation .dropdown-heading {
-  padding-left: 0px;
-}
-
 @media screen and (max-width: 767px) {
   .hoapa-navigation .dropdown-heading {
     padding: 5px 0;
@@ -12300,15 +12296,12 @@ footer .social-icons li a.icon-facebook:hover {
     padding: 0;
     background-size: 100%;
   }
-  .navbar .nav {
-    margin-top: 2px !important;
-  }
   .navbar .nav > li:not(.last):before {
     bottom: 0;
     width: 1px;
     height: 20px;
     right: -1px;
-    top: 13px;
+    top: 21px;
   }
   .navbar .nav > li > a {
     font-size: 20px;
@@ -12385,7 +12378,7 @@ footer .social-icons li a.icon-facebook:hover {
     width: 1px;
     height: 20px;
     right: -1px;
-    top: 13px;
+    top: 20px;
   }
   .navbar .nav > li > a {
     font-size: 20px;
@@ -12474,7 +12467,7 @@ footer .social-icons li a.icon-facebook:hover {
     width: 1px;
     height: 20px;
     right: -1px;
-    top: 15px;
+    top: 20px;
   }
   .navbar .nav > li > a {
     font-size: 20px;
@@ -27444,6 +27437,7 @@ footer .dislay-h3 span {
   .navbar-nav .open .dropdown-menu {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 45px;
   }
   .navbar-nav .open .dropdown-menu .dropdown-header.you-have-contacts {
     padding-top: 0;
@@ -37711,12 +37705,12 @@ button {
 
 .navbar {
   overflow: visible;
-  padding: 5px 0;
+  padding: 0;
 }
 
 .navbar .navbar-brand {
   background-size: auto 40px;
-  background-position: 0 5px;
+  background-position: 0 10px;
 }
 
 @media (min-width: 768px) {
@@ -37727,6 +37721,7 @@ button {
 
 .dropdown-heading {
   padding: 0;
+  padding-top: 10px !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -37765,7 +37760,7 @@ button {
 
 .messages-dropdown .dropdown-heading {
   border-bottom: 1px solid #e9eaec;
-  padding-bottom: 10px;
+  padding: 0 10px 10px;
   font-weight: bold;
 }
 
@@ -37792,8 +37787,10 @@ button {
 }
 
 .nav-dropdown {
+  top: 60px;
+  right: -6px !important;
   display: none !important;
-  padding: 10px;
+  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -37801,7 +37798,7 @@ button {
     position: static;
     float: none;
     width: auto;
-    margin-top: -15px !important;
+    margin-top: 15px !important;
     background-color: transparent;
     border: 0;
     box-shadow: none;
@@ -37820,6 +37817,20 @@ button {
   .nav-dropdown a {
     padding: 7px !important;
   }
+}
+
+.nav-dropdown li {
+  padding: 0 10px;
+}
+
+.nav-dropdown li:not(.dropdown-heading):hover {
+  background: #94c435;
+  color: #fff;
+}
+
+.nav-dropdown li:not(.dropdown-heading):hover .pro-text2 {
+  background: url(../images/PRO_White.svg) left top no-repeat;
+  background-size: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -37896,7 +37907,7 @@ button {
 
 #navMenu a:not(.btn) {
   font-weight: 300;
-  color: #333;
+  color: inherit;
   font-size: 20px;
 }
 
@@ -37910,12 +37921,14 @@ button {
 @media screen and (max-width: 767px) {
   #navMenu a:not(.btn) {
     font-size: 21px  !important;
+    padding: 0;
   }
 }
 
 #navMenu .btn {
   font-size: 20px;
   font-weight: 700;
+  margin-top: -10px;
 }
 
 @media (max-width: 991px) {
@@ -37942,11 +37955,27 @@ button {
   }
 }
 
+@media (min-width: 767px) {
+  #navMenu .dropdown:hover .nav-dropdown, #navMenu .dropdown:hover .messages-dropdown {
+    display: block !important;
+  }
+}
+
+.paddTop0 {
+  padding-top: 0 !important;
+}
+
+.navbar-nav > li:not(.no-borders) {
+  height: 61px;
+}
+
 @media (max-width: 767px) {
   .navbar-nav > li:not(.no-borders) {
     min-height: 50px;
     border-bottom: 1px solid #edf1e5;
     padding: 0 30px;
+    height: auto;
+    padding-top: 12px;
   }
 }
 
@@ -37987,7 +38016,6 @@ button {
 
 @media (max-width: 991px) {
   #js-join-button, #js-login-button {
-    padding: 15px 8px;
     font-size: 16px;
     font-weight: 400;
   }
@@ -37996,6 +38024,7 @@ button {
 @media (max-width: 767px) {
   #js-join-button, #js-login-button {
     font-size: 21px;
+    padding: 0;
   }
 }
 

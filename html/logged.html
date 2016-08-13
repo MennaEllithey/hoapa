@@ -91,7 +91,7 @@
                     <ul class="nav navbar-nav navbar-right" id="navMenu">
                     <li class="visible-xs no-borders"><button type="button" class="btn btn-danger btn-common xs-100">Post ad</button></li>
                     <li class="dropdown has-miniature-profile-picture">
-                        <a href="/profile/" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="/profile/" class="dropdown-toggle paddTop0" data-toggle="dropdown">
                                                       <img src="https://hoapa.pagepipe.org/resources/hoapa/dist/images/profile.png" alt="news-pic1">
                                                         My profile <span class="caret-icon"></span>
                         </a>
@@ -104,9 +104,9 @@
                             <li><a href="/createprofile">Edit profile</a></li>
                         </ul>
                     </li>
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="/home" class="paddTop0">Home</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret-icon"></span></a>
+                        <a href="#" class="dropdown-toggle paddTop0" data-toggle="dropdown">Projects <span class="caret-icon"></span></a>
                         <ul class="dropdown-menu dropdown-rtl  nav-dropdown" >
                             <li class="dropdown-heading"><b>Hire</b></li>
                             <li><a class="text-orange" href="/post-project">Post ad</a></li>
@@ -126,14 +126,14 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle"  data-toggle="dropdown">Boost <span class="caret-icon"></span></a>
+                        <a href="#" class="dropdown-toggle paddTop0"  data-toggle="dropdown">Boost <span class="caret-icon"></span></a>
                         <ul class="dropdown-menu dropdown-rtl nav-dropdown" style="display: none;">
                             <li><a href="#" data-toggle="modal" data-target="#boostAd">Boost my ad</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#boostProfile">Boost my profile</a></li>
                             <li><a href="#" data-toggle="modal" data-target="#boostSite">Boost ServiceFinder</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown hidden-xs"> <a href="/chat" class="dropdown-toggle " data-toggle="dropdown"><span class="chat-icon nav-chat-icon"></span></a> 
+                    <li class="dropdown hidden-xs"> <a href="/chat" class="dropdown-toggle paddTop0" data-toggle="dropdown"><span class="chat-icon nav-chat-icon"></span></a> 
                         <ul class="dropdown-menu dropdown-rtl messages-dropdown" >
                             <li class="dropdown-heading">Messages</li>
                             <li>
@@ -167,7 +167,7 @@
                             <li class="text-center alert-success show-all-btn"><a href="/chat">Show all</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown hidden-xs"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-chat-icon bell-icon"></span></a>
+                    <li class="dropdown hidden-xs"> <a href="#" class="dropdown-toggle paddTop0" data-toggle="dropdown"><span class="nav-chat-icon bell-icon"></span></a>
                      <ul class="dropdown-menu dropdown-rtl messages-dropdown" id="feed-notification-list" >
                           <li class="dropdown-heading" id="feed-notification">Notifications</li>
                            
@@ -177,13 +177,13 @@
                     <li class="visible-xs"><a href="#">Settings</a></li>
                     <li class="visible-xs"><a href="#">Logout</a></li>
                     <li class="dropdown hidden-xs last">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret-icon bigger-caret-icon"></span></a>
+                        <a href="#" class="dropdown-toggle paddTop0" data-toggle="dropdown"><span class="caret-icon bigger-caret-icon"></span></a>
                         <ul class="dropdown-menu dropdown-rtl  nav-dropdown" style="display: none;">
                             <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                             <li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                         </ul>
                     </li>
-                    <li class="hidden-xs"><a href="/post-project" class="btn btn-danger btn-common no-margin-left">Post ad</a></li>
+                    <li class="hidden-xs last"><a href="/post-project paddTop0" class="btn btn-danger btn-common no-margin-left">Post ad</a></li>
 
                     </ul>
                     
@@ -540,10 +540,11 @@
 
     $( document ).ready(function() {
         $(".nav-tabs a").click(function(){window.location.hash =  $(this).attr("href") +'x';});
-        $('.dropdown-toggle,[data-toggle="dropdown"]').hover(function(){$(this).next(".nav-dropdown").first().toggle()});
+        $('.dropdown-toggle,[data-toggle="dropdown"]').hover(function(){
+            //$(this).parents(".dropdown").addClass("open")
+        });
         $('.dropdown-toggle,[data-toggle="dropdown"]').click(function(e){
             e.preventDefault(); 
-            //$(this).next(".dropdown-menu").first().slideToggle()
         });
         $(window).scroll(function () {
             if (window.innerWidth > 767) {
@@ -554,7 +555,7 @@
                 }
             }
         });
-        
+
         if (location.hash) {
             currentTab = window.location.hash;
             currentTab = currentTab.replace("x","")
