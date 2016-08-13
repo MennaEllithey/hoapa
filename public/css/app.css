@@ -37729,8 +37729,20 @@ button {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .dropdown-heading {
+    margin-left: -15px;
+  }
+}
+
 .dropdown-heading ~ li a {
   padding: 7px 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .dropdown-heading b {
+    font-weight: 500;
+  }
 }
 
 .messages-dropdown {
@@ -37818,21 +37830,16 @@ button {
 
 @media screen and (max-width: 767px) {
   .nav-dropdown * {
-    font-size: 16px !important;
+    font-size: 21px  !important;
     font-weight: 300;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .nav-dropdown .dropdown-heading {
-    margin-left: -15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .you-have-contacts {
-    display: inline;
+    display: block;
     font-size: 14px !important;
+    padding: 10px 0 0 !important;
   }
 }
 
@@ -37900,23 +37907,15 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #navMenu a:not(.btn) {
+    font-size: 21px  !important;
+  }
+}
+
 #navMenu .btn {
   font-size: 20px;
   font-weight: 700;
-}
-
-@media (max-width: 767px) {
-  #navMenu .btn {
-    width: 90% !important;
-    margin: 0 auto !important;
-    display: block;
-    margin-bottom: 10px !important;
-    padding: 9px 20px;
-    font-size: 17px;
-    margin-top: 9px !important;
-    font-weight: 500;
-    border-radius: 3px;
-  }
 }
 
 @media (max-width: 991px) {
@@ -37926,6 +37925,20 @@ button {
     font-weight: 500 !important;
     padding: 0 10px !important;
     line-height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  #navMenu .btn {
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: block;
+    margin-bottom: 10px !important;
+    padding: 9px 20px;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-top: 9px !important;
+    border-radius: 3px;
   }
 }
 
@@ -37976,6 +37989,13 @@ button {
   #js-join-button, #js-login-button {
     padding: 15px 8px;
     font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 767px) {
+  #js-join-button, #js-login-button {
+    font-size: 21px;
   }
 }
 

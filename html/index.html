@@ -391,6 +391,8 @@
     <script src="../public/js/footable.js"></script>
     <script>
     $( document ).ready(function() {
+        $(".nav-tabs a").click(function(){window.location.hash =  $(this).attr("href") +'x';});
+       
         $(window).scroll(function () {
             if (window.innerWidth > 767) {
                 if ($(window).scrollTop() > 600) {
@@ -400,6 +402,11 @@
                 }
             }
         });
+        if (location.hash) {
+            currentTab = window.location.hash;
+            currentTab = currentTab.replace("x","")
+            $(".nav-tabs a[href='" + currentTab+"']").click();
+        }
     });
         // Script for responsive table
         var responsiveTableTr = $(".responsive-table tr td:nth-child(1)");
