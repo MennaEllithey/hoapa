@@ -68,7 +68,7 @@
 }
 .nav-dropdown{
     top: 60px;
-    right: -6px!important;
+    right: 0px!important;
     display: none!important;
     padding: 0;
     @media screen and (max-width: 767px){
@@ -150,7 +150,24 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#navMenu {
+.navbar-nav {
+    > li:not(.no-borders) {
+        height: 61px;
+        @media (max-width: 767px) {
+            min-height: 50px;
+            border-bottom: 1px solid #edf1e5;
+            padding: 0 30px;
+            height:auto;
+            padding-top: 12px;
+        }
+    }
+    > li {
+        @media (min-width: 768px) {
+            float: none;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
     i:not(.icon) {
         font-size: 15px;
         @media (max-width: 767px) {
@@ -166,6 +183,7 @@
         @media (max-width: 991px) {
             font-size: 16px;
             font-weight: 500;
+            padding: 11px 10px;
         }
         @media screen and (max-width: 767px){
             font-size: 21px  !important;
@@ -200,6 +218,7 @@
             &:hover{
                 .nav-dropdown,.messages-dropdown{
                     display: block!important;
+                    top:60px
                 }
             }
         }
@@ -207,25 +226,6 @@
 }
 .paddTop0 {
     padding-top: 0!important;
-}
-.navbar-nav {
-    > li:not(.no-borders) {
-        height: 61px;
-        @media (max-width: 767px) {
-            min-height: 50px;
-            border-bottom: 1px solid #edf1e5;
-            padding: 0 30px;
-            height:auto;
-            padding-top: 12px;
-        }
-    }
-    > li {
-        @media (min-width: 768px) {
-            float: none;
-            display: table-cell;
-            vertical-align: middle;
-        }
-    }
 }
 .bell-icon {
     height: 25px;
@@ -259,7 +259,6 @@
         padding: 0;
     }
 }
-
 i.icon {
     color: #9e9e9e;
     font-size: 27px;
@@ -482,15 +481,6 @@ footer {
 .navbar-collapse.collapse {
     @media (min-width: 768px) {
         width: 84%;
-    }
-}
-#navMenu {
-    a {
-        @media (min-width: 768px) {
-            font-size: 16px;
-            font-weight: 300;
-            padding: 11px 10px;
-        }
     }
 }
 

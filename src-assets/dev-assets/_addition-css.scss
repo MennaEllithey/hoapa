@@ -3515,9 +3515,6 @@ footer {
           top: 20px;
         }
         > a {
-          font-size: 20px;
-          font-weight: 300;
-          padding: 11px 15px;
           &.btn {
             font-weight: 600;
           }
@@ -3703,7 +3700,7 @@ footer {
   .navbar .nav li a {
     width: 100% !important;
     margin: 0 !important;
-    padding: 15px 0;
+    padding: 0;
     font-size: 20px;
     &:hover {
       background: #ff7519 !important;
@@ -16237,11 +16234,6 @@ body {
 footer .dislay-h3 span {
   display: inline-block;
 }
-.navbar .nav li a {
-  padding: 15px 8px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
 .padding-bottom-405 {
   .profile-pic .media {
     margin: 0 0 10px;
@@ -20036,7 +20028,7 @@ footer .about-drop-down {
       a {
         &:hover, &:focus {
           background: 0 none !important;
-          color: #3d3d3d;
+          color: inherit;
         }
       }
       :active {
@@ -20046,14 +20038,6 @@ footer .about-drop-down {
     }
     a.invite-projects {
       padding-left: 50px !important;
-    }
-    &.dropdown.open {
-      a {
-        color: #94c435;
-      }
-      .dropdown-menu a {
-        color: #3d3d3d;
-      }
     }
   }
 
