@@ -103,16 +103,15 @@
         &:not(.dropdown-heading):hover{
             background:#94c435;
             color:#fff;
-            .pro-text2 {
-                background: url(../images/PRO_White.svg) left top no-repeat;
-                background-size: 100%;
+            .pro-text2{
+                color:inherit
             }
         }
         @media screen and (max-width: 767px){
             border-bottom: 1px solid #edf1e5;
         }
     }
-    * {
+    *:not(.pro-text2) {
         @media screen and (max-width: 767px){
             font-size: 21px  !important;
             font-weight: 300;

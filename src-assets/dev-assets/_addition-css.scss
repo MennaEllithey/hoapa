@@ -20758,18 +20758,16 @@ body .workprofile-fin.add-css {
 }
 
 .pro-text2 {
-  background: 0 none;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  background: url(../images/pro-text.svg) no-repeat left top;
-  width: 58px;
-  height: 31px;
-  display: inline-block;
-  margin-right: 6px;
-  text-indent: -9999px;
-  background-size:100%;
-  vertical-align: middle;
-  display: inline-block;
+    background: none;
+    color: #8ec220;
+    text-indent: 0;
+    font-weight: bold;
+    border: 3px solid;
+    border-radius: 4px;
+    padding: 0px 4px;
+    width: auto;
+    font-size: 15px;
+    margin-right:5px
 }
 
 .responsive-icon2 {
