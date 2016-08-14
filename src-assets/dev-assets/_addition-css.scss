@@ -19895,7 +19895,7 @@ footer .about-drop-down {
       cursor: pointer;
       display: table;
     }
-    &.ischecked label span {
+    &.ischecked label span:not(.pro-text2) {
       color: #3d3d3d;
       font-size: 21px;
       font-weight: normal;
@@ -19908,7 +19908,7 @@ footer .about-drop-down {
       }
     }
     label {
-      span {
+      span:not(.pro-text2) {
         font-family: "Open sans",sans-serif;
         color: #fff;
       }

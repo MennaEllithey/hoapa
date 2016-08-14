@@ -752,3 +752,187 @@ input:focus::-webkit-input-placeholder {color: #A09E9E}
 input:focus::-moz-placeholder          {color: #A09E9E}
 input:focus:-moz-placeholder           {color: #A09E9E}
 input:focus:-ms-input-placeholder      {color: #A09E9E}
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 750px;
+    min-width: 320px;
+    height: auto;
+    z-index: 1000001;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.md-content {
+    background: #fff;
+    position: relative;
+    border-radius: 3px;
+    margin: 0 auto;
+    -webkit-transform: scale(0) rotate(720deg);
+    -moz-transform: scale(0) rotate(720deg);
+    -ms-transform: scale(0) rotate(720deg);
+    transform: scale(0) rotate(720deg);
+    opacity: 0;
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    transition: all 0.9s;
+	color: #000;
+    height: 80vh;
+    overflow: auto;
+	padding: 20px 30px;
+	p{
+		font-size:20px;
+		line-height:30px;
+	}
+	.section-heading{
+		color:#94c435;
+		font-weight:700;
+	}
+}
+.md-show {
+    visibility: visible;
+    .md-content {
+	    -webkit-transform: scale(1) rotate(0deg);
+	    -moz-transform: scale(1) rotate(0deg);
+	    -ms-transform: scale(1) rotate(0deg);
+	    transform: scale(1) rotate(0deg);
+	    opacity: 1;
+	}
+	~ .md-overlay {
+	    opacity: 1;
+	    visibility: visible;
+	}
+}
+.link-img{
+	margin-bottom:20px;
+	a {
+	    display: inline-block;
+	    margin-right: 10px;
+	    &:after {
+		    content: "Share";
+		    display: inline-block;
+		    color:#fff;
+		    line-height: 50px;
+		    font-size: 20px;
+		    font-weight: bold;
+		    margin-left: -3px;
+		    border-radius: 0 4px 4px 0;
+		    padding: 0 20px 0 10px;
+		    float: right;
+		}
+	}
+	img {
+	    height: 50px;
+	    width: auto;
+	    float: left;
+	}
+}
+.fbBG{
+	&:after {
+		background: #44619d;
+	}
+}
+.twBG{
+	&:after {
+		background: #62c8f8;
+	}
+}
+.gpBG{
+	&:after {
+		background: #df5347;
+	}
+}
+.emBG{
+	&:after {
+		background: #a8a8a8;
+	}
+}
+.checkboxLbl{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+.padd0{
+	padding:0;
+}
+.warningTxt {
+    color: #b51212;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+.mtb20 {
+    margin: 20px 0;
+}
+.standardLbl {
+    margin: 20px 0 10px;
+    font-weight: normal;
+    font-size: 20px;
+    width:100%;
+}
+.standardInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bababa;
+    border-radius: 3px;
+}
+.cardIcon{
+    background: url(../images/CreditCardIcon.png) no-repeat 101% center;
+}
+.customDropdown{
+	.btn-default {
+	    background: #ededed;
+	    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(53%, #f6f6f6), color-stop(100%, white));
+	    background: -webkit-linear-gradient(top, #ededed 0%, #f6f6f6 53%, white 100%);
+	    background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 53%, white 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+	    padding: 10px 50px;
+	    width: auto;
+	    border-radius: 4px 0 0 4px;
+	    &:not(.btn-smart) {
+		    padding: 10px;
+		    border: 1px solid #cccccc;
+		    border-radius: 0 4px 4px 0;
+		}
+	}
+}
+.footerTxt {
+    color: #717171;
+    font-weight: bold;
+    font-size: 13px;
+}
+.md-close{
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    color: #747474;
+    cursor: pointer;
+    top: 10px;
+}
+.paymentDetails{
+	display:none
+}
+body.mdshow{
+	overflow:hidden
+}
