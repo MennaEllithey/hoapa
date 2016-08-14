@@ -717,14 +717,7 @@ select.mobile-device {
 }
 
 .hoapa-navigation .dropdown-menu {
-  margin-top: 8px;
   border-radius: 4px !important;
-}
-
-@media screen and (max-width: 767px) {
-  .hoapa-navigation .dropdown-menu {
-    padding-left: 12px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -12383,7 +12376,7 @@ footer .social-icons li a.icon-facebook:hover {
   .navbar .nav > li > a {
     font-size: 20px;
     font-weight: 300;
-    padding: 11px 15px;
+    padding: 11px 8px;
   }
   .navbar .nav > li > a.btn {
     font-weight: 600;
@@ -12636,8 +12629,8 @@ footer .social-icons li a.icon-facebook:hover {
     padding: 0 0 0 0 !important;
   }
   .navbar .nav li a {
-    width: 100% !important;
-    margin: 0 !important;
+    width: 100%;
+    margin: 0;
     padding: 0;
     font-size: 20px;
   }
@@ -12646,8 +12639,8 @@ footer .social-icons li a.icon-facebook:hover {
     color: #ffffff;
   }
   .navbar .nav li a.btn {
-    width: 100% !important;
-    margin: 0 0 10px 0 !important;
+    width: 100%;
+    margin: 0 0 10px 0;
   }
   .navbar .nav li a.btn:hover {
     background: #ff7519 !important;
@@ -37724,15 +37717,17 @@ button {
 
 .messages-dropdown {
   width: 415px;
-  background-color: #fff !important;
+  background-color: #fff;
+  padding: 0;
 }
 
 @media screen and (max-width: 767px) {
   .messages-dropdown {
-    width: 100vw !important;
+    width: 99vw;
     left: 0;
     top: 75px;
-    position: absolute !important;
+    position: absolute;
+    margin-top: -2px;
   }
 }
 
@@ -37749,13 +37744,21 @@ button {
 @media screen and (max-width: 767px) {
   .messages-dropdown .dropdown-heading {
     width: 100%;
-    margin-bottom: 10px;
-    padding-left: 0;
+    margin: 0 0 10px;
   }
 }
 
 .messages-dropdown li {
   width: 100%;
+}
+
+.messages-dropdown li:not(.dropdown-heading):hover {
+  background: #94c435;
+  color: #fff;
+}
+
+.messages-dropdown li:not(.dropdown-heading):hover .notification-messge {
+  color: inherit;
 }
 
 @media screen and (max-width: 767px) {
@@ -37919,7 +37922,7 @@ button {
   .navbar-nav a:not(.btn) {
     font-size: 16px;
     font-weight: 500;
-    padding: 11px 10px;
+    padding: 11px 8px;
   }
 }
 

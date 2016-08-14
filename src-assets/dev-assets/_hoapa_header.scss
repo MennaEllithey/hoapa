@@ -130,13 +130,8 @@
     }
     .dropdown-menu
     {
-        margin-top: 8px;
 
         border-radius: 4px !important;
-        @media screen and (max-width: 767px)
-        {
-            padding-left: 12px;
-        }
     }
     ul.dropdown-menu:before
     {

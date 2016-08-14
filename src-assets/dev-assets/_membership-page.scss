@@ -31,12 +31,14 @@
 }
 .messages-dropdown {
     width: 415px;
-    background-color: #fff!important;
+    background-color: #fff;
+    padding:0;
     @media screen and (max-width: 767px){
-        width: 100vw!important;
+        width: 99vw;
         left: 0;
         top: 75px;
-        position: absolute!important;
+        position: absolute;
+        margin-top: -2px;
     }
     a {
         padding: 7px 5px!important;
@@ -48,12 +50,18 @@
         @media screen and (max-width: 767px)
         {
             width: 100%;
-            margin-bottom: 10px;
-            padding-left: 0;
+            margin: 0 0 10px;
         }
     }
     li {
         width: 100%;
+        &:not(.dropdown-heading):hover{
+            background:#94c435;
+            color:#fff;
+            .notification-messge{
+                color:inherit;
+            }
+        }
     }
 }
 .dropdown {
@@ -183,7 +191,7 @@
         @media (max-width: 991px) {
             font-size: 16px;
             font-weight: 500;
-            padding: 11px 10px;
+            padding: 11px 8px;
         }
         @media screen and (max-width: 767px){
             font-size: 21px  !important;

@@ -3427,7 +3427,7 @@ footer {
         > a {
           font-size: 20px;
           font-weight: 300;
-          padding: 11px 15px;
+          padding: 11px 8px;
           &.btn {
             font-weight: 600;
             padding: 10px 19px 13px 19px;
@@ -3698,8 +3698,8 @@ footer {
     padding: 0 0 0 0 !important;
   }
   .navbar .nav li a {
-    width: 100% !important;
-    margin: 0 !important;
+    width: 100%;
+    margin: 0;
     padding: 0;
     font-size: 20px;
     &:hover {
@@ -3707,8 +3707,8 @@ footer {
       color: #ffffff;
     }
     &.btn {
-      width: 100% !important;
-      margin: 0 0 10px 0 !important;
+      width: 100%;
+      margin: 0 0 10px 0 ;
       &:hover {
         background: #ff7519 !important;
         color: #ffffff;
