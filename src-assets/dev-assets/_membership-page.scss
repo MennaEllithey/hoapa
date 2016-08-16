@@ -362,7 +362,7 @@ a {
     }
 }
 
-.markSTyle {
+.mark_style {
     width: 50%;
     text-align: center;
     display: table-cell;
@@ -377,7 +377,7 @@ a {
 }
 
 .rowStyle:last-child {
-    .markSTyle {
+    .mark_style {
         border-bottom: 1px solid #d0cece;
         border-radius: 0 0 4px 4px;
     }

@@ -366,31 +366,31 @@
                                                     <div class="tabless">
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Quote on projects</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Ask questions</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Display of your contact</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Status PRO</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Detailed company/service profile with photos</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Email job alerts</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                         <div class="clearfix rowStyle">
                                                             <h4 class="itemStyle">Contact details of client</h4>
-                                                            <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                            <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 col-sm-6 col-xs-6 pull-right text-center">
@@ -534,34 +534,9 @@
     <script src="../public/js/main.js"></script>
     <script type="text/javascript" src="../public/js/slick.js"></script>
     <script src="../public/js/footable.js"></script>
+    <script src="../public/js/custom.js"></script>
     <script>
 
-    
-
-    $( document ).ready(function() {
-        $(".nav-tabs a").click(function(){window.location.hash =  $(this).attr("href") +'x';});
-        $('.dropdown-toggle,[data-toggle="dropdown"]').hover(function(){
-            //$(this).parents(".dropdown").addClass("open")
-        });
-        $('.dropdown-toggle,[data-toggle="dropdown"]').click(function(e){
-            e.preventDefault(); 
-        });
-        $(window).scroll(function () {
-            if (window.innerWidth > 767) {
-                if ($(window).scrollTop() > 600) {
-                    $("#showOnScroll").addClass('quotes-block');
-                } else {
-                    $("#showOnScroll").removeClass('quotes-block');
-                }
-            }
-        });
-
-        if (location.hash) {
-            currentTab = window.location.hash;
-            currentTab = currentTab.replace("x","")
-            $(".nav-tabs a[href='" + currentTab+"']").click();
-        }
-    });
         // Script for responsive table
         var responsiveTableTr = $(".responsive-table tr td:nth-child(1)");
         responsiveTableTr.on('click', function () {

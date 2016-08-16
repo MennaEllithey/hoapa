@@ -372,31 +372,31 @@
                                               <div class="tabless">
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Quote on projects</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Ask questions</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Display of your contact</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Status PRO</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Detailed company/service profile with photos</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Email job alerts</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                                  <div class="clearfix rowStyle">
                                                     <h4 class="itemStyle">Contact details of client</h4>
-                                                    <div class="markSTyle"><img src="../public/images/check.png" /></div>
+                                                    <div class="mark_style"><img src="../public/images/check.png" /></div>
                                                  </div>
                                               </div>
                                               <div class="col-md-6 col-sm-6 col-xs-6 pull-right text-center">
@@ -538,17 +538,14 @@
              </footer>
         </div>
         <div class="modal fade js-dialojsg-work-profile-activated" id="dialog-work-profile-activated" role="dialog">
-           <div class="modal-dialog t10 pb0">
+           <div class="modal-dialog t60 pb0">
               <form method="POST">
                  <div class="modal-content">
                     <a class="hoapa-navbar-brand visible-xs" href="/">Hoapa</a>
                     <button type="button" class="close close-work-profile-activated" data-dismiss="modal"><img src="https://hoapa.pagepipe.org/resources/hoapa/dist/images/close-icon.png"></button>
                  </div>
                  <h1 class="hoapa-modal-heading">Congratulations!</h1>
-                 <p>Your ServiceFinder.co.nz profile is now active. </p>
-                 
-                 <h1 class="hoapa-modal-heading">Want more exposure?</h1>
-                 <p>Share your profile now:</p>
+                 <p>Your ServiceFinder.co.nz profile is active. Share it now:</p>
                  <div class="share-long-button share-long-button">
                     <div class="row no-gutters">
                        <div class="col-sm-3">
@@ -576,23 +573,19 @@
               </form>
               <div class="clearfix"></div>
                 <div class="mt20 clearfix">
-                    <h1 class="hoapa-modal-heading text-bold black">Special offer</h1>
-                    <div class="col-md-8">
+                    <h1 class="hoapa-modal-heading text-bold text-black">Special offer</h1>
+                    <div>
                         <p><img src="../public/images/check.png"> Get <span class="pro-text2">PRO</span>membership status</p>
                         <p><img src="../public/images/check.png"> Instant access to unlimited quotes</p>
                         <p><img src="../public/images/check.png"> Big budget projects</p>
                     </div>
-                    <div class="text-center col-md-4">
+                    <div class="text-center">
                         <div class="discountLbl">Save<br><span>50%</span></div>
                     </div>
-                    <div class="text-center col-md-12">
+                    <div class="text-center">
                         <button class="btn btn-danger btn-common mtb20 flashBtn" >Go PRO now! 
                             <span class="circleFlash">Only<br><sup>$</sup><span class="font13 text-bold">9.99</span><sub>/mo</sub></span>
                         </button> 
-                         
-                        <button class="btn btn-danger btn-common mtb20 flashBtn" >Go PRO now! 
-                            <span class="circleFlash" style="padding: 9px 0px;">Only<br><sup>$</sup><span class="font13 text-bold">9.99</span><br>month</span>
-                        </button>
                     </div>
                 </div>
 
@@ -697,45 +690,9 @@
         <script src="../public/js/main.js"></script>
         <script type="text/javascript" src="../public/js/slick.js"></script>
         <script src="../public/js/footable.js"></script>
+        <script src="../public/js/custom.js"></script>
         <script>
-                $(window).load(function(){
-                    $("#dialog-work-profile-activated").modal("show");
-                })
-                $( document ).ready(function() {
-                     
-                     $(".nav-tabs a").click(function(){window.location.hash =  $(this).attr("href") +'x';});
-                     $('.dropdown-toggle,[data-toggle="dropdown"]').hover(function(){
-                         //$(this).parents(".dropdown").addClass("open")
-                     });
-                     $('.dropdown-toggle,[data-toggle="dropdown"]').click(function(e){
-                         e.preventDefault(); 
-                     });
-                     $(window).scroll(function () {
-                         if (window.innerWidth > 767) {
-                             if ($(window).scrollTop() > 600) {
-                                 $("#showOnScroll").addClass('quotes-block');
-                             } else {
-                                 $("#showOnScroll").removeClass('quotes-block');
-                             }
-                         }
-                     });
-             
-                     if (location.hash) {
-                         currentTab = window.location.hash;
-                         currentTab = currentTab.replace("x","")
-                         $(".nav-tabs a[href='" + currentTab+"']").click();
-                     }
-                 });
-             function openpaymentDetails(){
-                 $(".paymentDetails").slideToggle();
-                     $(".md-content").animate({
-                       scrollTop: $(".paymentDetails").offset().top
-                     }, 1000);
-             }
-             $(".md-close").click(function(){
-                 $(".md-modal").removeClass("md-show")
-                 $("body").removeClass("mdshow")
-             })
+                
                      // Script for responsive table
                      var responsiveTableTr = $(".responsive-table tr td:nth-child(1)");
                      responsiveTableTr.on('click', function () {
