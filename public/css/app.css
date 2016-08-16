@@ -35133,12 +35133,6 @@ input:focus:-ms-input-placeholder {
   padding-bottom: 0;
 }
 
-.checkboxLbl {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-}
-
 .mt20 {
   margin-top: 20px;
 }
@@ -35147,33 +35141,15 @@ input:focus:-ms-input-placeholder {
   padding: 0;
 }
 
-.warningTxt {
-  color: #b51212;
-  font-weight: bold;
-  font-size: 14px;
-  display: inline-block;
-}
-
 .mtb20 {
   margin: 20px 0;
-}
-
-.standardLbl {
-  margin: 20px 0 10px;
-  font-weight: normal;
-  font-size: 20px;
-  width: 100%;
-}
-
-.font13 {
-  font-size: 13px;
 }
 
 .text-bold {
   font-weight: 700;
 }
 
-.circleFlash {
+.circle-flash {
   display: inline-block;
   background: #FFEB3B;
   position: absolute;
@@ -35189,17 +35165,22 @@ input:focus:-ms-input-placeholder {
   font-weight: 500;
 }
 
-.circleFlash sup, .circleFlash sub {
+.circle-flash sup, .circle-flash sub {
   font-size: 11px;
 }
 
-.circleFlash sub {
+.circle-flash sub {
   bottom: -0.17em;
 }
 
-.discountLbl {
+.circle-flash span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.discount-lbl {
   display: inline-block;
-  padding: 2px 20px;
+  padding: 2px 15px;
   background: #ffeb3b;
   border-radius: 4px;
   font-weight: bold;
@@ -35208,39 +35189,64 @@ input:focus:-ms-input-placeholder {
   line-height: 22px;
   position: relative;
   vertical-align: middle;
-  /*margin-left: 10px;*/
+  margin-left: 10px;
+  font-size: 17px;
 }
 
-.discountLbl span {
-  font-size: 30px;
+.discount-lbl span {
+  font-size: 25px;
   display: inline-block;
+}
+
+.vertical-sub {
+  vertical-align: sub;
 }
 
 .inline-block {
   display: inline-block;
 }
 
-.flashBtn {
+.flash-btn {
   position: relative;
   padding-right: 75px !important;
+  margin-left: 0 !important;
+  font-size: 21px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 700;
+  padding: 16px 0 18px 10px;
+  color: #fff;
+  outline: 0;
+  background: #ff6518;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  line-height: 21px;
 }
 
-.green {
-  color: #8ec220;
-}
-
-.standardInput {
+.standard-input {
   width: 100%;
   padding: 10px;
   border: 1px solid #bababa;
   border-radius: 3px;
 }
 
-.cardIcon {
+.standard-lbl {
+  margin: 20px 0 10px;
+  font-weight: normal;
+  font-size: 20px;
+  width: 100%;
+}
+
+.checkbox-lbl {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.card-icon {
   background: url(../images/CreditCardIcon.png) no-repeat 101% center;
 }
 
-.customDropdown .btn-default {
+.custom-dropdown .btn-default {
   background: #ededed;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(53%, #f6f6f6), color-stop(100%, white));
   background: -webkit-linear-gradient(top, #ededed 0%, #f6f6f6 53%, white 100%);
@@ -35251,29 +35257,23 @@ input:focus:-ms-input-placeholder {
   border-radius: 4px 0 0 4px;
 }
 
-.customDropdown .btn-default:not(.btn-smart) {
+.custom-dropdown .btn-default:not(.btn-smart) {
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 0 4px 4px 0;
 }
 
-.footerTxt {
+.footer-txt {
   color: #717171;
   font-weight: bold;
   font-size: 13px;
 }
 
-.md-close {
-  font-size: 30px;
-  position: absolute;
-  right: 15px;
-  color: #747474;
-  cursor: pointer;
-  top: 10px;
-}
-
-.paymentDetails {
-  display: none;
+.warning-txt {
+  color: #b51212;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
 }
 
 .footable {
