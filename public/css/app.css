@@ -38400,6 +38400,15 @@ footer:before {
   }
 }
 
+.search-box {
+  margin: 20px 0;
+  width: 200px;
+}
+
+.hoapa-tabbable .nav-tabs {
+  padding: 0 15px;
+}
+
 .va-middle {
   display: inline-block;
   vertical-align: middle;

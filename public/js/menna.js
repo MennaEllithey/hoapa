@@ -1,7 +1,14 @@
 $( document ).ready(function() {
 
     // Code for making tabs active based on the url
-    $(".nav-tabs a").click(function(){window.location.hash =  $(this).attr("href") +'x';});
+    $(".nav-tabs a").click(function(){
+        window.location.hash =  $(this).attr("href") +'x';
+        if($(".search-box").length){
+            $(".hoapa-open-ads-table tbody tr").show();
+            $(".search-box").val("");
+            $(".search-box").focus();
+        }
+    });
 
     $(window).scroll(function () {
         if (window.innerWidth > 767) {
@@ -23,12 +30,13 @@ $( document ).ready(function() {
         $("#dialog-work-profile-activated").modal("show");
     }
     // real-time search function
-
-    $(".search-box").keyup(function(){
-        search = $(this).val().toLowerCase();
-        $(".hoapa-open-ads-table tbody tr").show().filter(function() {
-            var text = $(this).text().toLowerCase();
-            return !~text.indexOf(search);
-        }).hide();
-    });
+    if($(".search-box").length){
+        $(".search-box").keyup(function(){
+            search = $(this).val().toLowerCase();
+            $(".hoapa-open-ads-table tbody tr").show().filter(function() {
+                var text = $(this).text().toLowerCase();
+                return !~text.indexOf(search);
+            }).hide();
+        });
+    }
 });
