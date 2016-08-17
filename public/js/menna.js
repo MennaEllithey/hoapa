@@ -22,4 +22,13 @@ $( document ).ready(function() {
     if( $("#dialog-work-profile-activated").length){
         $("#dialog-work-profile-activated").modal("show");
     }
+    // real-time search function
+
+    $(".search-box").keyup(function(){
+        search = $(this).val().toLowerCase();
+        $(".hoapa-open-ads-table tbody tr").show().filter(function() {
+            var text = $(this).text().toLowerCase();
+            return !~text.indexOf(search);
+        }).hide();
+    });
 });
