@@ -16,61 +16,183 @@
 </head>
 <body>
   <div class="employer-profile-phase advertising-box postad-phase sticky-nav">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Hoapa</a>
-        </div>
+    <nav class="hoapa-navigation navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="notification-icons">
+                <li class="dropdown"> <a href="/chat" class="dropdown-toggle" data-toggle="dropdown"><span class="chat-icon nav-chat-icon"></span></a> 
+                    <ul class="dropdown-menu dropdown-rtl messages-dropdown">
+                        <li class="dropdown-heading">Messages</li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile</div>
+                                <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam modi ex natus nobis. Dignissimos sed excepturi possimus dolorem repudiandae iusto quas eum illum accusantium! Aliquam perferendis quisquam, voluptas sapiente ducimus.</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile</div>
+                                <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nesciunt, dolorem aspernatur itaque nobis? Earum voluptate consequuntur, assumenda velit illo facilis. Numquam quod architecto adipisci aliquam sunt sapiente voluptate officia.</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile</div>
+                                <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod in, hic voluptatum? Necessitatibus sunt, ut, voluptates ab fugit ullam expedita commodi molestiae obcaecati totam facere modi dolorem! Dolor, facilis!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile</div>
+                                <div class="notification-messge">Test message jlksjf lksfj skldfjdskl fjdsklf</div>
+                            </a>
+                        </li>
+                        <li class="text-center alert-success show-all-btn"><a href="#">Show all</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="nav-chat-icon bell-icon"></span></a>
+                   <ul class="dropdown-menu dropdown-rtl messages-dropdown">
+                       <li class="dropdown-heading">Notifications</li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile <span class="text-success">- provide a quote</span></div>
+                                <div class="notification-messge">Test message jlksjf lksfj skldfjdskl fjdsklf</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile <span class="text-success">- accepted project</span></div>
+                                <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto repudiandae ducimus repellendus quae magni eveniet similique, eos sed ut dolorem inventore iste illo sequi ullam necessitatibus delectus eaque porro.</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                <div class="notification-profile-name">Test profile <span class="text-success">- posted an ad </span></div>
+                                <div class="notification-messge">Test message jlksjf lksfj skldfjdskl fjdsklf</div>
+                            </a>
+                        </li>
+                        <li class="text-center alert-success show-all-btn"><a href="#">Show all</a></li>
+                    </ul>
+                </li>
+            </ul>
+                    <a class="navbar-brand" href="/">Hoapa</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" id="navMenu">
+                    <li class="visible-xs no-borders"><button type="button" class="btn btn-danger btn-common xs-100">Post ad</button></li>
+                    <li class="dropdown has-miniature-profile-picture">
+                        <a href="/profile/" class="dropdown-toggle paddTop0" data-toggle="dropdown">
+                                                      <img src="https://hoapa.pagepipe.org/resources/hoapa/dist/images/profile.png" alt="news-pic1">
+                                                        My profile <span class="caret-icon"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-rtl  nav-dropdown" >
+                            <li><a href="/profile">Go <div class="pro-symbol" style="right: 0;top: 10px;display: inline-block;">
+                                 <div class="pro-text2">PRO</div>
+                              </div>now</a></li>
+                            <li><a href="#">Invite friends <span class="dropdown-header you-have-contacts">You have 3 friends</span> </a></li>
+                            <li><a href="/profile/">View profile</a></li>
+                            <li><a href="/createprofile">Edit profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/home" class="paddTop0">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle paddTop0" data-toggle="dropdown">Projects <span class="caret-icon"></span></a>
+                        <ul class="dropdown-menu dropdown-rtl  nav-dropdown" >
+                            <li class="dropdown-heading"><b>Hire</b></li>
+                            <li><a class="text-orange" href="/post-project">Post ad</a></li>
+                            <li><a href="/my-ads">My ads <span>(0)</span></a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-heading"><b>Work</b></li>
+                            <li><a href="/find-work-now" class="find-work-drop">Find work</a></li>
+                            <li><a href="/my-work">My work <span>(0)</span></a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-heading"><b>Reviews</b></li>
+                            <li><a href="/submit-review">Submit review <span>(10)</span></a></li>
+                            <li><a href="/my-reviews">My reviews</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-heading"><b>Finances</b></li>
+                            <li><a href="my-finances">My finances</a></li>
+                            <li><a href="create-miletone">Create milestone</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle paddTop0"  data-toggle="dropdown">Boost <span class="caret-icon"></span></a>
+                        <ul class="dropdown-menu dropdown-rtl nav-dropdown" style="display: none;">
+                            <li><a href="#" data-toggle="modal" data-target="#boostAd">Boost my ad</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#boostProfile">Boost my profile</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#boostSite">Boost ServiceFinder</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown hidden-xs"> <a href="/chat" class="dropdown-toggle paddTop0" data-toggle="dropdown"><span class="chat-icon nav-chat-icon"></span></a> 
+                        <ul class="dropdown-menu dropdown-rtl messages-dropdown" >
+                            <li class="dropdown-heading">Messages</li>
+                            <li>
+                                <a href="#">
+                                    <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                    <div class="notification-profile-name">Test profile</div>
+                                    <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam modi ex natus nobis. Dignissimos sed excepturi possimus dolorem repudiandae iusto quas eum illum accusantium! Aliquam perferendis quisquam, voluptas sapiente ducimus.</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                    <div class="notification-profile-name">Test profile</div>
+                                    <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nesciunt, dolorem aspernatur itaque nobis? Earum voluptate consequuntur, assumenda velit illo facilis. Numquam quod architecto adipisci aliquam sunt sapiente voluptate officia.</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                    <div class="notification-profile-name">Test profile</div>
+                                    <div class="notification-messge">Test message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quod in, hic voluptatum? Necessitatibus sunt, ut, voluptates ab fugit ullam expedita commodi molestiae obcaecati totam facere modi dolorem! Dolor, facilis!</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="notification-profile-img"><img class="img-responsive" src="https://hoapa.pagepipe.org/resources/hoapa/users_data/images/profile_images/" alt=""></div>
+                                    <div class="notification-profile-name">Test profile</div>
+                                    <div class="notification-messge">Test message jlksjf lksfj skldfjdskl fjdsklf</div>
+                                </a>
+                            </li>
+                            <li class="text-center alert-success show-all-btn"><a href="/chat">Show all</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown hidden-xs"> <a href="#" class="dropdown-toggle paddTop0" data-toggle="dropdown"><span class="nav-chat-icon bell-icon"></span></a>
+                     <ul class="dropdown-menu dropdown-rtl messages-dropdown" id="feed-notification-list" >
+                          <li class="dropdown-heading" id="feed-notification">Notifications</li>
+                           
+                            
+                        <li class="text-center alert-success show-all-btn"><a href="#">Show all</a></li></ul>
+                    </li>
+                    <li class="visible-xs"><a href="#">Settings</a></li>
+                    <li class="visible-xs"><a href="#">Logout</a></li>
+                    <li class="dropdown hidden-xs last">
+                        <a href="#" class="dropdown-toggle paddTop0" data-toggle="dropdown"><span class="caret-icon bigger-caret-icon"></span></a>
+                        <ul class="dropdown-menu dropdown-rtl  nav-dropdown" style="display: none;">
+                            <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+                            <li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs last"><a href="/post-project paddTop0" class="btn btn-danger btn-common no-margin-left">Post ad</a></li>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-           <li><a href="javascript:;" data-toggle="modal" data-target="#myModal">Home</a></li>
-           <li class="dnone"><a href="javascript:;" data-toggle="modal" data-target="#findwork" class="btn btn-danger post-btn">Post ad</a></li>
-           <li class="dnone dropdown"><a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Profile</a>
-            <ul class="dropdown-menu drop-down-my-profile">
-              <li><a href="#" class="invite-friend">Invite friends</a></li>
-              <li class="dropdown-header you-have-contacts">You have 3 contacts</li>
-              <li><a href="#" class="invite-friend">View profile</a></li>
-              <li><a href="#" class="invite-friend">Improve profile</a></li>
-              <li><a href="#" class="invite-friend">Email alerts</a></li>
-            </ul>
-          </li>
-          <li class="dnone dropdown"><a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-            <ul class="dropdown-menu drop-down-my-profile">
-              <li><a href="#" class="invite-friend"><b>Hire</b></a></li>
-              <li><a href="javascript:" class="invite-projects">Post ad</a></li>
-              <li><a href="javascript:" class="invite-projects">My ads <span></span></a></li>
-              <li><a href="#" class="invite-friend"><b>Work</b></a></li>
-              <li><a href="#" class="find-work-drop">Find work</a></li>
-              <li><a href="#" class="invite-projects">My work <span>(0)</span></a></li>
-              <li><a href="#" class="invite-friend"><b>Reviews</b></a></li>
-              <li><a href="#" class="invite-projects">Submit review <span>(10)</span></a></li>
-              <li><a href="#" class="invite-projects">My reviews</a></li>
-            </ul>
-          </li>
-          <li class="dnone"><a href="javascript:;">Messages</a></li>
-          <li class="dnone">
-            <a href="#" data-toggle=" dropdown"="" aria-haspopup="true" aria-expanded="false">Boost</a>
-            <ul class="dropdown-menu drop-down-my-profile">
-              <li><a href="#">Go PRO</a></li>
-              <li><a href="#">Boost ad</a></li>
-              <li><a href="#">Boost profile</a></li>
-              <li><a href="#">Boost HOAPA</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript:;" data-toggle="modal" data-target="#modalregisterpopup" data-dismiss="modal">Logout</a></li>
-            <li class="dblock"><a href="#" data-toggle="modal" data-target="#findwork" class="btn btn-danger post-btn">Post ad</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
     <div class="top-padding">
       <div class="contact-phase-new">
         <div class="section-postad">
@@ -106,17 +228,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -124,17 +246,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -142,17 +264,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -160,17 +282,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -178,17 +300,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -196,17 +318,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -214,17 +336,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -232,17 +354,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -250,17 +372,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -268,17 +390,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                         </tbody>
@@ -306,17 +428,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -324,17 +446,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -342,17 +464,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -360,17 +482,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -378,17 +500,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -396,17 +518,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -414,17 +536,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -432,17 +554,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -450,17 +572,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
@@ -468,17 +590,17 @@
                             <td data-title="Quotes">3</td>
                             <td data-title="Awarded to"><a href="#">RichardKROolland</a></td>
                             <td>
-                              <select class="selectpicker subject-btn">
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                                <option>
-                                  Choose action
-                                </option>
-                              </select>
+                              <div class="btn-group full-width-dropdown">
+                                  <button type="button" class="btn btn-default dropdown-toggle btn-smart" data-toggle="dropdown">Choose action</button>
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <i class="fa fa-angle-down"></i>
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                      <li><a>Choose action</a></li>
+                                  </ul>
+                              </div>
                             </td>
                           </tr>
                         </tbody>

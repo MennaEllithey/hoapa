@@ -38408,6 +38408,18 @@ footer:before {
   padding: 0 15px;
 }
 
+.btn-group.full-width-dropdown {
+  width: 100%;
+}
+
+.btn-group.full-width-dropdown .btn-smart {
+  width: 85%;
+}
+
+.btn-group.full-width-dropdown .dropdown-toggle:last-of-type {
+  width: 15%;
+}
+
 .va-middle {
   display: inline-block;
   vertical-align: middle;
