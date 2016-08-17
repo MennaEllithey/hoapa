@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
     // Code for making tabs active based on the url
-    $(".nav-tabs a").click(function(){
-        window.location.hash =  $(this).attr("href") +'x';
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        window.location.hash =  $(e.target).attr("href") +'x';
         if($(".search-box").length){
             $(".hoapa-open-ads-table tbody tr").show();
             $(".search-box").val("");
